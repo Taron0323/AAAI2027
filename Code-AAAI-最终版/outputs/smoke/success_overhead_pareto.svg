@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="420" viewBox="0 0 760 420">
+<text x="64" y="28" font-size="18" font-weight="700">Success-Overhead Pareto</text>
+<line x1="64" y1="356" x2="696" y2="356" stroke="#333" />
+<line x1="64" y1="64" x2="64" y2="356" stroke="#333" />
+<text x="64" y="408" font-size="12">depth / method</text>
+<text x="10" y="46" font-size="12">success</text>
+<circle cx="64.0" cy="258.7" r="7" fill="#2f6f9f" />
+<text x="73.0" y="262.7" font-size="12" fill="#2f6f9f">react</text>
+<circle cx="64.0" cy="64.0" r="7" fill="#d17b0f" />
+<text x="73.0" y="68.0" font-size="12" fill="#d17b0f">react_sft</text>
+<circle cx="64.0" cy="161.3" r="7" fill="#3a8f5b" />
+<text x="73.0" y="165.3" font-size="12" fill="#3a8f5b">token_mtp</text>
+<circle cx="103.5" cy="161.3" r="7" fill="#8a5fbf" />
+<text x="112.5" y="165.3" font-size="12" fill="#8a5fbf">plan_and_act</text>
+<circle cx="696.0" cy="161.3" r="7" fill="#b84545" />
+<text x="705.0" y="165.3" font-size="12" fill="#b84545">lats_webdreamer</text>
+<circle cx="538.0" cy="210.0" r="7" fill="#2f6f9f" />
+<text x="547.0" y="214.0" font-size="12" fill="#2f6f9f">foreact_latent_rerank</text>
+<text x="60" y="390" font-size="12">x = extra forward count per task; Mode A should remain at zero overhead.</text>
+</svg>

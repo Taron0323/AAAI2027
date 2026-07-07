@@ -1,0 +1,19 @@
+method,depth,success_rate,effective_lookahead_depth,success_collapse_depth,within_eld,beyond_trained_horizon,note
+react,2,1.0,2,4,True,False,PlanDepth smoke boundary row; not a paper result
+react,4,0.0,2,4,False,False,PlanDepth smoke boundary row; not a paper result
+react,6,0.0,2,4,False,True,PlanDepth smoke boundary row; not a paper result
+react_sft,2,1.0,2,6,True,False,PlanDepth smoke boundary row; not a paper result
+react_sft,4,1.0,2,6,False,False,PlanDepth smoke boundary row; not a paper result
+react_sft,6,1.0,2,6,False,True,PlanDepth smoke boundary row; not a paper result
+token_mtp,2,0.0,2,2,True,False,PlanDepth smoke boundary row; not a paper result
+token_mtp,4,1.0,2,2,False,False,PlanDepth smoke boundary row; not a paper result
+token_mtp,6,1.0,2,2,False,True,PlanDepth smoke boundary row; not a paper result
+plan_and_act,2,0.0,2,2,True,False,PlanDepth smoke boundary row; not a paper result
+plan_and_act,4,1.0,2,2,False,False,PlanDepth smoke boundary row; not a paper result
+plan_and_act,6,1.0,2,2,False,True,PlanDepth smoke boundary row; not a paper result
+lats_webdreamer,2,0.0,4,2,True,False,PlanDepth smoke boundary row; not a paper result
+lats_webdreamer,4,1.0,4,2,True,False,PlanDepth smoke boundary row; not a paper result
+lats_webdreamer,6,1.0,4,2,False,True,PlanDepth smoke boundary row; not a paper result
+foreact_latent_rerank,2,0.25,4,2,True,False,PlanDepth smoke boundary row; not a paper result
+foreact_latent_rerank,4,0.5,4,2,True,False,PlanDepth smoke boundary row; not a paper result
+foreact_latent_rerank,6,0.75,4,2,False,True,PlanDepth smoke boundary row; not a paper result

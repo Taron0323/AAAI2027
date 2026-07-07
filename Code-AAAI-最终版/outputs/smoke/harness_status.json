@@ -1,0 +1,22 @@
+{
+  "appworld": {
+    "available": false,
+    "message": "Install AppWorld and download official train/test splits.",
+    "name": "appworld"
+  },
+  "swe_bench_verified": {
+    "available": true,
+    "message": "source present at third_party/benchmarks/SWE-bench/swebench; install editable package before official runs",
+    "name": "swebench"
+  },
+  "swe_gym": {
+    "available": true,
+    "message": "source present at third_party/benchmarks/SWE-Gym/README.md; install editable package before official runs",
+    "name": "SweGymAdapter"
+  },
+  "tau2_bench": {
+    "available": true,
+    "message": "source present at third_party/benchmarks/tau2-bench/src/tau2; install editable package before official runs",
+    "name": "tau2"
+  }
+}

@@ -1,0 +1,5 @@
+mode: plan
+out: outputs/efficiency/vllm_plan.json
+model: outputs/foreact_4b_milestone/mode_a
+port: 8000
+tensor_parallel_size: 1

@@ -1,0 +1,4 @@
+method,depth,success_rate
+foreact_latent_rerank,2,0.25
+foreact_latent_rerank,4,0.5
+foreact_latent_rerank,6,0.75

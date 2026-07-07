@@ -1,0 +1,82 @@
+{
+  "config": "configs/smoke.yaml",
+  "effective_lookahead_depth": {
+    "foreact_smoke": 4,
+    "react_sft_smoke": 2
+  },
+  "external_harness_status": {
+    "appworld": {
+      "available": false,
+      "message": "Install AppWorld and download official train/test splits.",
+      "name": "appworld"
+    },
+    "swe_bench_verified": {
+      "available": true,
+      "message": "source present at third_party/benchmarks/SWE-bench/swebench; install editable package before official runs",
+      "name": "swebench"
+    },
+    "swe_gym": {
+      "available": true,
+      "message": "source present at third_party/benchmarks/SWE-Gym/README.md; install editable package before official runs",
+      "name": "SweGymAdapter"
+    },
+    "tau2_bench": {
+      "available": true,
+      "message": "source present at third_party/benchmarks/tau2-bench/src/tau2; install editable package before official runs",
+      "name": "tau2"
+    }
+  },
+  "num_examples": 48,
+  "num_tasks": 12,
+  "outputs": [
+    "ablation_jobs.json",
+    "ablation_real_jobs",
+    "aligned_examples.jsonl",
+    "asset_audit.json",
+    "asset_audit_final.json",
+    "asset_status.json",
+    "asset_status_final.json",
+    "dataset_status.json",
+    "depth_curves.svg",
+    "efficiency.csv",
+    "efficiency.svg",
+    "fig2_pilot_eld.csv",
+    "fig2_pilot_eld.svg",
+    "fig5_recovery_eld.csv",
+    "fig5_recovery_eld.svg",
+    "foreact_latent_rerank_depth_curve.csv",
+    "foreact_latent_rerank_metrics.json",
+    "forecast_entropy.csv",
+    "granularity_a_prime.csv",
+    "harness_status.json",
+    "harness_status_final.json",
+    "lats_webdreamer_depth_curve.csv",
+    "lats_webdreamer_metrics.json",
+    "manifest.json",
+    "plan_and_act_depth_curve.csv",
+    "plan_and_act_metrics.json",
+    "plandepth_boundary_h5.csv",
+    "plandepth_case_study.json",
+    "plandepth_case_study.svg",
+    "plandepth_schema.json",
+    "plandepth_trajectories.jsonl",
+    "react_depth_curve.csv",
+    "react_metrics.json",
+    "react_sft_depth_curve.csv",
+    "react_sft_metrics.json",
+    "registry.json",
+    "schema_from_tools.json",
+    "smoke_eld_curve.csv",
+    "success_overhead_pareto.svg",
+    "token_mtp_depth_curve.csv",
+    "token_mtp_metrics.json",
+    "toy_training_metrics.json"
+  ],
+  "schema_size": 5,
+  "v3_contract": {
+    "mode_A_zero_overhead": true,
+    "no_paper_numbers": "smoke artifacts only; not real AAAI results",
+    "north_star": "Plan like diffusion, act like autoregressive.",
+    "pcr_kl_direction": "KL(sg[q_{t+1}^{h-1}] || q_t^h)"
+  }
+}

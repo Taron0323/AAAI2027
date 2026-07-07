@@ -1,0 +1,200 @@
+{
+  "depth": 6,
+  "goal": "Reach node_2_5 without triggering the delayed trap.",
+  "note": "Smoke artifact only; replace probabilities with real forecast heads for paper figures.",
+  "rows": [
+    {
+      "action": "inspect target=node_2_0",
+      "dead_end": false,
+      "forecast": [
+        {
+          "dead_end_mass": 0.24859554409656015,
+          "depth": 1,
+          "top_probability": 0.5035433514840619,
+          "top_sketch": "inspect::target"
+        },
+        {
+          "dead_end_mass": 0.17668075129915828,
+          "depth": 2,
+          "top_probability": 0.5560589939217973,
+          "top_sketch": "move::target"
+        },
+        {
+          "dead_end_mass": 0.30224308525955457,
+          "depth": 3,
+          "top_probability": 0.40216287117452626,
+          "top_sketch": "move::target"
+        },
+        {
+          "dead_end_mass": 0.46968128041820567,
+          "depth": 4,
+          "top_probability": 0.2719333940986971,
+          "top_sketch": "commit::target"
+        }
+      ],
+      "sketch": "inspect::target",
+      "step": 1
+    },
+    {
+      "action": "query_constraint target=node_2_1",
+      "dead_end": false,
+      "forecast": [
+        {
+          "dead_end_mass": 0.20128942728342053,
+          "depth": 1,
+          "top_probability": 0.477220639056311,
+          "top_sketch": "move::target"
+        },
+        {
+          "dead_end_mass": 0.19720419284200957,
+          "depth": 2,
+          "top_probability": 0.40309167258456857,
+          "top_sketch": "move::target"
+        },
+        {
+          "dead_end_mass": 0.37563131372743447,
+          "depth": 3,
+          "top_probability": 0.28918446864727076,
+          "top_sketch": "verify::target"
+        },
+        {
+          "dead_end_mass": 0.3224883997883421,
+          "depth": 4,
+          "top_probability": 0.3567939755927416,
+          "top_sketch": "move::target"
+        }
+      ],
+      "sketch": "<unk>",
+      "step": 2
+    },
+    {
+      "action": "move target=node_2_2",
+      "dead_end": false,
+      "forecast": [
+        {
+          "dead_end_mass": 0.40390947424244683,
+          "depth": 1,
+          "top_probability": 0.2205092390418191,
+          "top_sketch": "commit::target"
+        },
+        {
+          "dead_end_mass": 0.31384717808686724,
+          "depth": 2,
+          "top_probability": 0.26256741451759896,
+          "top_sketch": "verify::target"
+        },
+        {
+          "dead_end_mass": 0.42576523826417345,
+          "depth": 3,
+          "top_probability": 0.23822904544920998,
+          "top_sketch": "<unk>"
+        },
+        {
+          "dead_end_mass": 0.3730615301331294,
+          "depth": 4,
+          "top_probability": 0.23645408480931632,
+          "top_sketch": "verify::target"
+        }
+      ],
+      "sketch": "move::target",
+      "step": 3
+    },
+    {
+      "action": "verify target=node_2_3",
+      "dead_end": false,
+      "forecast": [
+        {
+          "dead_end_mass": 0.13821313752422532,
+          "depth": 1,
+          "top_probability": 0.5426871331759392,
+          "top_sketch": "inspect::target"
+        },
+        {
+          "dead_end_mass": 0.2647959709339614,
+          "depth": 2,
+          "top_probability": 0.3661675809988446,
+          "top_sketch": "move::target"
+        },
+        {
+          "dead_end_mass": 0.41746980147028356,
+          "depth": 3,
+          "top_probability": 0.23355191559157976,
+          "top_sketch": "move::target"
+        },
+        {
+          "dead_end_mass": 0.4423898416148453,
+          "depth": 4,
+          "top_probability": 0.3013283052754182,
+          "top_sketch": "commit::target"
+        }
+      ],
+      "sketch": "verify::target",
+      "step": 4
+    },
+    {
+      "action": "move target=node_2_4",
+      "dead_end": false,
+      "forecast": [
+        {
+          "dead_end_mass": 0.3417803614373549,
+          "depth": 1,
+          "top_probability": 0.35070680163858603,
+          "top_sketch": "inspect::target"
+        },
+        {
+          "dead_end_mass": 0.6350921597135653,
+          "depth": 2,
+          "top_probability": 0.4974707176945214,
+          "top_sketch": "commit::target"
+        },
+        {
+          "dead_end_mass": 0.3270197259338195,
+          "depth": 3,
+          "top_probability": 0.2933127091654951,
+          "top_sketch": "move::target"
+        },
+        {
+          "dead_end_mass": 0.3536407417561188,
+          "depth": 4,
+          "top_probability": 0.3362832850089023,
+          "top_sketch": "verify::target"
+        }
+      ],
+      "sketch": "move::target",
+      "step": 5
+    },
+    {
+      "action": "commit target=node_2_5",
+      "dead_end": false,
+      "forecast": [
+        {
+          "dead_end_mass": 0.4362070522936098,
+          "depth": 1,
+          "top_probability": 0.2905184539606056,
+          "top_sketch": "verify::target"
+        },
+        {
+          "dead_end_mass": 0.4834152810801544,
+          "depth": 2,
+          "top_probability": 0.28665443885985037,
+          "top_sketch": "<unk>"
+        },
+        {
+          "dead_end_mass": 0.41820536782501927,
+          "depth": 3,
+          "top_probability": 0.2789795047911629,
+          "top_sketch": "inspect::target"
+        },
+        {
+          "dead_end_mass": 0.3447245680738921,
+          "depth": 4,
+          "top_probability": 0.24251525209476602,
+          "top_sketch": "inspect::target"
+        }
+      ],
+      "sketch": "commit::target",
+      "step": 6
+    }
+  ],
+  "task_id": "pd-0002"
+}

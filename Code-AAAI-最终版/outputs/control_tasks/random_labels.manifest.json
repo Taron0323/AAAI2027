@@ -1,0 +1,9 @@
+{
+  "aligned_examples": "outputs/smoke/aligned_examples.jsonl",
+  "control_tasks_source": "third_party/auxiliary/control-tasks",
+  "note": "Use this random-label file as the Hewitt-Liang control target for ELD probes.",
+  "num_labels": 4,
+  "num_rows": 48,
+  "out": "outputs/control_tasks/random_labels.jsonl",
+  "source_available": true
+}

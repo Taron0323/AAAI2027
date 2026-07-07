@@ -1,0 +1,200 @@
+# External assets are managed here instead of being faked in smoke code.
+# Code assets may be cloned as git submodules or archive directories.
+# Dataset assets are intentionally local-only and ignored by git.
+
+benchmark_code:
+  tau2_bench:
+    title: "tau2-bench"
+    url: "https://github.com/sierra-research/tau2-bench.git"
+    archive_url: "https://github.com/sierra-research/tau2-bench/archive/refs/heads/main.zip"
+    local_path: "third_party/benchmarks/tau2-bench"
+    install_command: "python3 -m pip install -e third_party/benchmarks/tau2-bench"
+    required_markers:
+      - "README.md"
+    notes: "Official tau2 benchmark code. Datasets remain outside git."
+  appworld:
+    title: "AppWorld"
+    url: "https://github.com/StonyBrookNLP/appworld.git"
+    archive_url: "https://github.com/StonyBrookNLP/appworld/archive/refs/heads/main.zip"
+    local_path: "third_party/benchmarks/appworld"
+    install_command: "python3 -m pip install -e third_party/benchmarks/appworld"
+    required_markers:
+      - "README.md"
+    notes: "Official AppWorld harness code. Official data must be downloaded via AppWorld instructions."
+  swe_gym:
+    title: "SWE-Gym"
+    url: "https://github.com/SWE-Gym/SWE-Gym.git"
+    archive_url: "https://github.com/SWE-Gym/SWE-Gym/archive/refs/heads/main.zip"
+    local_path: "third_party/benchmarks/SWE-Gym"
+    install_command: "python3 -m pip install -e third_party/benchmarks/SWE-Gym"
+    required_markers:
+      - "README.md"
+    notes: "Official SWE-Gym code/environment layer."
+  swe_bench:
+    title: "SWE-bench"
+    url: "https://github.com/swe-bench/SWE-bench.git"
+    archive_url: "https://github.com/swe-bench/SWE-bench/archive/refs/heads/main.zip"
+    local_path: "third_party/benchmarks/SWE-bench"
+    install_command: "python3 -m pip install -e third_party/benchmarks/SWE-bench"
+    required_markers:
+      - "README.md"
+    notes: "Official SWE-bench harness used for SWE-bench Verified evaluation."
+  mini_swe_agent:
+    title: "mini-SWE-agent"
+    url: "https://github.com/SWE-agent/mini-swe-agent.git"
+    archive_url: "https://github.com/SWE-agent/mini-swe-agent/archive/refs/heads/main.zip"
+    local_path: "third_party/benchmarks/mini-swe-agent"
+    install_command: "python3 -m pip install -e third_party/benchmarks/mini-swe-agent"
+    required_markers:
+      - "README.md"
+      - "pyproject.toml"
+    notes: "Recommended lightweight SWE-bench execution harness."
+
+baseline_code:
+  react:
+    title: "ReAct reference"
+    url: "https://github.com/ysymyth/ReAct.git"
+    archive_url: "https://github.com/ysymyth/ReAct/archive/refs/heads/master.zip"
+    local_path: "third_party/baselines/ReAct"
+    install_command: "Read upstream examples; ForeAct has a built-in runnable ReAct policy."
+    required_markers:
+      - "README.md"
+    notes: "Reference implementation; built-in smoke policy remains dependency-free."
+  lats:
+    title: "Language Agent Tree Search"
+    url: "https://github.com/lapisrocks/LanguageAgentTreeSearch.git"
+    archive_url: "https://github.com/lapisrocks/LanguageAgentTreeSearch/archive/refs/heads/main.zip"
+    local_path: "third_party/baselines/LanguageAgentTreeSearch"
+    install_command: "Follow upstream README after cloning."
+    required_markers:
+      - "README.md"
+    notes: "Official/public LATS reference code for adapter integration."
+  webdreamer:
+    title: "WebDreamer"
+    url: "https://github.com/OSU-NLP-Group/WebDreamer.git"
+    archive_url: "https://github.com/OSU-NLP-Group/WebDreamer/archive/refs/heads/main.zip"
+    local_path: "third_party/baselines/WebDreamer"
+    install_command: "Follow upstream README after cloning."
+    required_markers:
+      - "README.md"
+    notes: "Official WebDreamer reference code for adapter integration."
+  plan_and_act:
+    title: "Plan-and-Act"
+    url: "https://github.com/SqueezeAILab/plan-and-act.git"
+    archive_url: "https://github.com/SqueezeAILab/plan-and-act/archive/refs/heads/main.zip"
+    local_path: "third_party/baselines/plan-and-act"
+    install_command: "Follow upstream README after cloning."
+    required_markers:
+      - "README.md"
+    notes: "Plan-and-Act reference code if upstream is reachable."
+  preact:
+    title: "PreAct"
+    url: "https://github.com/Fu-Dayuan/PreAct.git"
+    archive_url: "https://github.com/Fu-Dayuan/PreAct/archive/refs/heads/main.zip"
+    local_path: "third_party/baselines/PreAct"
+    install_command: "Follow upstream README after cloning."
+    required_markers:
+      - "README.md"
+    notes: "PreAct reference code if upstream is reachable."
+  reflexion:
+    title: "Reflexion"
+    url: "https://github.com/noahshinn/reflexion.git"
+    archive_url: "https://github.com/noahshinn/reflexion/archive/refs/heads/main.zip"
+    local_path: "third_party/baselines/reflexion"
+    install_command: "Follow upstream README after cloning."
+    required_markers:
+      - "README.md"
+    notes: "Official Reflexion reference implementation."
+
+auxiliary_code:
+  control_tasks:
+    title: "Hewitt and Liang control tasks"
+    url: "https://github.com/john-hewitt/control-tasks.git"
+    archive_url: "https://api.github.com/repos/john-hewitt/control-tasks/tarball/master"
+    local_path: "third_party/auxiliary/control-tasks"
+    install_command: "Follow upstream README. This checkout may be archive-managed if git clone is blocked."
+    required_markers:
+      - "README.md"
+      - "control-tasks"
+    notes: "Auxiliary control-task code for ELD/probing anti-confound checks."
+  verl:
+    title: "verl"
+    url: "https://github.com/verl-project/verl.git"
+    archive_url: "https://github.com/verl-project/verl/archive/refs/heads/main.zip"
+    local_path: "third_party/auxiliary/verl"
+    install_command: "Follow upstream README; used as an optional large-scale RL/SFT training framework."
+    required_markers:
+      - "README.md"
+      - "pyproject.toml"
+    notes: "Optional training framework; no model weights are downloaded."
+  openrlhf:
+    title: "OpenRLHF"
+    url: "https://github.com/OpenRLHF/OpenRLHF.git"
+    archive_url: "https://github.com/OpenRLHF/OpenRLHF/archive/refs/heads/main.zip"
+    local_path: "third_party/auxiliary/OpenRLHF"
+    install_command: "Follow upstream README; used as an optional RLHF/SFT training framework."
+    required_markers:
+      - "README.md"
+      - "pyproject.toml"
+    notes: "Optional training framework; no model weights are downloaded."
+
+nested_archive_code:
+  verl_recipe:
+    title: "verl recipe submodule"
+    url: "https://github.com/verl-project/verl-recipe.git"
+    commit: "e7f889574b8301cc0f0fc1d57c6d67f31ffeb689"
+    archive_url: "https://codeload.github.com/verl-project/verl-recipe/tar.gz/e7f889574b8301cc0f0fc1d57c6d67f31ffeb689"
+    local_path: "third_party/auxiliary/verl/recipe"
+    install_command: "bash scripts/bootstrap_external_assets.sh nested"
+    required_markers:
+      - "LICENSE"
+      - "pyproject.toml"
+      - ".foreact_archive_source"
+    notes: "Nested verl submodule pinned by the checked-out verl commit; archive-managed when git clone is unstable."
+  reflexion_leetcode_env:
+    title: "Reflexion leetcode-hard-gym submodule"
+    url: "https://github.com/GammaTauAI/leetcode-hard-gym.git"
+    commit: "228163abdc983712bebfd8e26f7e7d360830e648"
+    archive_url: "https://codeload.github.com/GammaTauAI/leetcode-hard-gym/tar.gz/228163abdc983712bebfd8e26f7e7d360830e648"
+    local_path: "third_party/baselines/reflexion/programming_runs/executors/leetcode_env"
+    install_command: "bash scripts/bootstrap_external_assets.sh nested"
+    required_markers:
+      - "README.md"
+      - "pyproject.toml"
+      - ".foreact_archive_source"
+    notes: "Nested Reflexion submodule pinned by the checked-out Reflexion commit; archive-managed when git clone is unstable."
+
+datasets:
+  tau2_bench_data:
+    title: "tau2-bench official data"
+    env_var: "TAU2_BENCH_ROOT"
+    local_path: "third_party/benchmarks/tau2-bench/data/tau2/domains"
+    download_command: "Follow tau2-bench upstream dataset instructions, then set TAU2_BENCH_ROOT."
+    required_markers:
+      - "airline"
+      - "retail"
+      - "telecom"
+    notes: "Do not commit benchmark data."
+  appworld_data:
+    title: "AppWorld official data"
+    env_var: "APPWORLD_ROOT"
+    local_path: "datasets/appworld"
+    download_command: "Install AppWorld and run its official data download command, then set APPWORLD_ROOT."
+    required_markers:
+      - "data"
+    notes: "Do not mix test data into training generation."
+  swe_gym_data:
+    title: "SWE-Gym official environments/data"
+    env_var: "SWE_GYM_ROOT"
+    local_path: "datasets/swe-gym"
+    download_command: "Follow SWE-Gym upstream setup for environments and data, then set SWE_GYM_ROOT."
+    required_markers: []
+    notes: "Large environment assets are local-only."
+  swe_bench_verified_data:
+    title: "SWE-bench Verified data"
+    env_var: "SWE_BENCH_ROOT"
+    local_path: "datasets/swe-bench"
+    download_command: "Use SWE-bench/Hugging Face official Verified setup, then set SWE_BENCH_ROOT."
+    required_markers:
+      - "verified"
+    notes: "Verified instances must come from official sources."

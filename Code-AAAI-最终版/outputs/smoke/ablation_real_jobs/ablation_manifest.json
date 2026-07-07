@@ -1,0 +1,586 @@
+{
+  "jobs": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/A_no_forecast_heads/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/A_no_forecast_heads/config.yaml",
+      "execute": false,
+      "job": {
+        "ablation_id": "A",
+        "description": "same teacher data and FLOPs, no forecast heads",
+        "group": "main_controls",
+        "key": "A_no_forecast_heads"
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/B_no_pcr/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/B_no_pcr/config.yaml",
+      "execute": false,
+      "job": {
+        "ablation_id": "B",
+        "description": "LAP soft-target CE without PCR",
+        "group": "main_controls",
+        "key": "B_no_pcr"
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/B_prime_no_branch_weight/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/B_prime_no_branch_weight/config.yaml",
+      "execute": false,
+      "job": {
+        "ablation_id": "B_prime",
+        "description": "remove branch-aware entropy weighting",
+        "group": "main_controls",
+        "key": "B_prime_no_branch_weight"
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/token_mtp/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/token_mtp/config.yaml",
+      "execute": false,
+      "job": {
+        "baseline_id": "B5",
+        "description": "token-level MTP, the critical action-vs-token baseline",
+        "group": "main_controls",
+        "key": "token_mtp"
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/A_prime_zeta_token/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/A_prime_zeta_token/config.yaml",
+      "execute": false,
+      "job": {
+        "group": "A_prime_sketch_granularity",
+        "key": "A_prime_zeta_token",
+        "zeta_mode": "token"
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/A_prime_zeta_fsp_summary/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/A_prime_zeta_fsp_summary/config.yaml",
+      "execute": false,
+      "job": {
+        "group": "A_prime_sketch_granularity",
+        "key": "A_prime_zeta_fsp_summary",
+        "zeta_mode": "fsp_summary"
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/A_prime_zeta_type/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/A_prime_zeta_type/config.yaml",
+      "execute": false,
+      "job": {
+        "group": "A_prime_sketch_granularity",
+        "key": "A_prime_zeta_type",
+        "zeta_mode": "type"
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/A_prime_zeta_type_arg/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/A_prime_zeta_type_arg/config.yaml",
+      "execute": false,
+      "job": {
+        "group": "A_prime_sketch_granularity",
+        "key": "A_prime_zeta_type_arg",
+        "zeta_mode": "type_arg"
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/A_prime_zeta_vq_mock/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/A_prime_zeta_vq_mock/config.yaml",
+      "execute": false,
+      "job": {
+        "group": "A_prime_sketch_granularity",
+        "key": "A_prime_zeta_vq_mock",
+        "zeta_mode": "vq_mock"
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/D_H1/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/D_H1/config.yaml",
+      "execute": false,
+      "job": {
+        "group": "D_horizon_sweep",
+        "horizon": 1,
+        "key": "D_H1"
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/D_H2/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/D_H2/config.yaml",
+      "execute": false,
+      "job": {
+        "group": "D_horizon_sweep",
+        "horizon": 2,
+        "key": "D_H2"
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/D_H4/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/D_H4/config.yaml",
+      "execute": false,
+      "job": {
+        "group": "D_horizon_sweep",
+        "horizon": 4,
+        "key": "D_H4"
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/D_H8/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/D_H8/config.yaml",
+      "execute": false,
+      "job": {
+        "group": "D_horizon_sweep",
+        "horizon": 8,
+        "key": "D_H8"
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/D_H16/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/D_H16/config.yaml",
+      "execute": false,
+      "job": {
+        "group": "D_horizon_sweep",
+        "horizon": 16,
+        "key": "D_H16"
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/E_K1/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/E_K1/config.yaml",
+      "execute": false,
+      "job": {
+        "group": "E_rollout_sweep",
+        "key": "E_K1",
+        "rollouts": 1
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/E_K2/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/E_K2/config.yaml",
+      "execute": false,
+      "job": {
+        "group": "E_rollout_sweep",
+        "key": "E_K2",
+        "rollouts": 2
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/E_K4/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/E_K4/config.yaml",
+      "execute": false,
+      "job": {
+        "group": "E_rollout_sweep",
+        "key": "E_K4",
+        "rollouts": 4
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/E_K8/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/E_K8/config.yaml",
+      "execute": false,
+      "job": {
+        "group": "E_rollout_sweep",
+        "key": "E_K8",
+        "rollouts": 8
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/F_lambda0.1_mu0.0/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/F_lambda0.1_mu0.0/config.yaml",
+      "execute": false,
+      "job": {
+        "group": "F_loss_sweep",
+        "key": "F_lambda0.1_mu0.0",
+        "lambda_future": 0.1,
+        "mu_consistency": 0.0
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/F_lambda0.1_mu0.1/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/F_lambda0.1_mu0.1/config.yaml",
+      "execute": false,
+      "job": {
+        "group": "F_loss_sweep",
+        "key": "F_lambda0.1_mu0.1",
+        "lambda_future": 0.1,
+        "mu_consistency": 0.1
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/F_lambda0.1_mu0.3/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/F_lambda0.1_mu0.3/config.yaml",
+      "execute": false,
+      "job": {
+        "group": "F_loss_sweep",
+        "key": "F_lambda0.1_mu0.3",
+        "lambda_future": 0.1,
+        "mu_consistency": 0.3
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/F_lambda0.3_mu0.0/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/F_lambda0.3_mu0.0/config.yaml",
+      "execute": false,
+      "job": {
+        "group": "F_loss_sweep",
+        "key": "F_lambda0.3_mu0.0",
+        "lambda_future": 0.3,
+        "mu_consistency": 0.0
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/F_lambda0.3_mu0.1/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/F_lambda0.3_mu0.1/config.yaml",
+      "execute": false,
+      "job": {
+        "group": "F_loss_sweep",
+        "key": "F_lambda0.3_mu0.1",
+        "lambda_future": 0.3,
+        "mu_consistency": 0.1
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/F_lambda0.3_mu0.3/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/F_lambda0.3_mu0.3/config.yaml",
+      "execute": false,
+      "job": {
+        "group": "F_loss_sweep",
+        "key": "F_lambda0.3_mu0.3",
+        "lambda_future": 0.3,
+        "mu_consistency": 0.3
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/F_lambda0.5_mu0.0/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/F_lambda0.5_mu0.0/config.yaml",
+      "execute": false,
+      "job": {
+        "group": "F_loss_sweep",
+        "key": "F_lambda0.5_mu0.0",
+        "lambda_future": 0.5,
+        "mu_consistency": 0.0
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/F_lambda0.5_mu0.1/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/F_lambda0.5_mu0.1/config.yaml",
+      "execute": false,
+      "job": {
+        "group": "F_loss_sweep",
+        "key": "F_lambda0.5_mu0.1",
+        "lambda_future": 0.5,
+        "mu_consistency": 0.1
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/F_lambda0.5_mu0.3/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/F_lambda0.5_mu0.3/config.yaml",
+      "execute": false,
+      "job": {
+        "group": "F_loss_sweep",
+        "key": "F_lambda0.5_mu0.3",
+        "lambda_future": 0.5,
+        "mu_consistency": 0.3
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/C_mode_A_only/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/C_mode_A_only/config.yaml",
+      "execute": false,
+      "job": {
+        "ablation_id": "C",
+        "description": "disable latent rerank, default zero-overhead ReAct-shaped inference",
+        "group": "C_rerank_controls",
+        "key": "C_mode_A_only"
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/C_prime_success_only/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/C_prime_success_only/config.yaml",
+      "execute": false,
+      "job": {
+        "ablation_id": "C_prime",
+        "description": "mode B scoring with success head only",
+        "group": "C_rerank_controls",
+        "key": "C_prime_success_only"
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/C_prime_forecast_only/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/C_prime_forecast_only/config.yaml",
+      "execute": false,
+      "job": {
+        "ablation_id": "C_prime",
+        "description": "mode B scoring with dead-end forecast mass only",
+        "group": "C_rerank_controls",
+        "key": "C_prime_forecast_only"
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/E_prime_second_teacher_subset/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/E_prime_second_teacher_subset/config.yaml",
+      "execute": false,
+      "job": {
+        "ablation_id": "E_prime",
+        "description": "second teacher subset for teacher-independence audit, external/API required",
+        "group": "E_prime_teacher_controls",
+        "key": "E_prime_second_teacher_subset"
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/G_predict_past/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/G_predict_past/config.yaml",
+      "execute": false,
+      "job": {
+        "ablation_id": "G",
+        "description": "same structure predicts past sketches instead of future sketches",
+        "group": "G_anti_confounds",
+        "key": "G_predict_past"
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "foreact.cli",
+        "train-foreact",
+        "--config",
+        "outputs/smoke/ablation_real_jobs/G_flops_matched_sft/config.yaml"
+      ],
+      "config": "outputs/smoke/ablation_real_jobs/G_flops_matched_sft/config.yaml",
+      "execute": false,
+      "job": {
+        "ablation_id": "G",
+        "description": "give ReAct-SFT equivalent extra optimization budget",
+        "group": "G_anti_confounds",
+        "key": "G_flops_matched_sft"
+      }
+    }
+  ],
+  "num_jobs": 33,
+  "output_dir": "outputs/smoke/ablation_real_jobs"
+}

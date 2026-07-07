@@ -1,0 +1,4 @@
+method,depth,success_rate
+react_sft,2,1.0
+react_sft,4,1.0
+react_sft,6,1.0

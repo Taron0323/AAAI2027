@@ -1,0 +1,25 @@
+main_controls:
+  - key: react_sft
+    description: same teacher data and FLOPs, no forecast heads
+  - key: token_mtp
+    description: token-level MTP, the critical action-vs-token baseline
+  - key: no_pcr
+    description: LAP soft-target CE without PCR
+  - key: predict_past
+    description: anti-confounding control with past-sketch targets
+
+sketch_granularity:
+  - token
+  - fsp_summary
+  - type
+  - type_arg
+  - vq
+
+horizon_sweep: [1, 2, 4, 8, 16]
+rollout_sweep: [1, 2, 4, 8]
+lambda_sweep: [0.1, 0.3, 0.5]
+mu_sweep: [0.0, 0.1, 0.3]
+
+reporting_priority:
+  main_paper: [react_sft, token_mtp, A_prime_type_arg, no_pcr, predict_past]
+  appendix: [horizon_sweep, rollout_sweep, lambda_sweep, mu_sweep, vq]

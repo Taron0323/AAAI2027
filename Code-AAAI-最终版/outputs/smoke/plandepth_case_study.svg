@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="428" height="346" viewBox="0 0 428 346">
+<text x="20" y="26" font-size="18" font-weight="700">PlanDepth Case Study Forecast Heatmap</text>
+<text x="232" y="34" font-size="12">h=1</text>
+<text x="274" y="34" font-size="12">h=2</text>
+<text x="316" y="34" font-size="12">h=3</text>
+<text x="358" y="34" font-size="12">h=4</text>
+<text x="14" y="69" font-size="12">inspect target=node_2_0</text>
+<rect x="220" y="44" width="39" height="39" fill="rgb(242,207,203)" stroke="#ffffff" />
+<text x="228" y="69" font-size="11">0.25</text>
+<rect x="262" y="44" width="39" height="39" fill="rgb(243,218,215)" stroke="#ffffff" />
+<text x="270" y="69" font-size="11">0.18</text>
+<rect x="304" y="44" width="39" height="39" fill="rgb(241,199,195)" stroke="#ffffff" />
+<text x="312" y="69" font-size="11">0.30</text>
+<rect x="346" y="44" width="39" height="39" fill="rgb(240,174,167)" stroke="#ffffff" />
+<text x="354" y="69" font-size="11">0.47</text>
+<text x="14" y="111" font-size="12">query_constraint target=node_2_1</text>
+<rect x="220" y="86" width="39" height="39" fill="rgb(242,214,211)" stroke="#ffffff" />
+<text x="228" y="111" font-size="11">0.20</text>
+<rect x="262" y="86" width="39" height="39" fill="rgb(243,215,212)" stroke="#ffffff" />
+<text x="270" y="111" font-size="11">0.20</text>
+<rect x="304" y="86" width="39" height="39" fill="rgb(241,188,183)" stroke="#ffffff" />
+<text x="312" y="111" font-size="11">0.38</text>
+<rect x="346" y="86" width="39" height="39" fill="rgb(241,196,191)" stroke="#ffffff" />
+<text x="354" y="111" font-size="11">0.32</text>
+<text x="14" y="153" font-size="12">move target=node_2_2</text>
+<rect x="220" y="128" width="39" height="39" fill="rgb(240,184,178)" stroke="#ffffff" />
+<text x="228" y="153" font-size="11">0.40</text>
+<rect x="262" y="128" width="39" height="39" fill="rgb(241,197,193)" stroke="#ffffff" />
+<text x="270" y="153" font-size="11">0.31</text>
+<rect x="304" y="128" width="39" height="39" fill="rgb(240,181,174)" stroke="#ffffff" />
+<text x="312" y="153" font-size="11">0.43</text>
+<rect x="346" y="128" width="39" height="39" fill="rgb(241,189,183)" stroke="#ffffff" />
+<text x="354" y="153" font-size="11">0.37</text>
+<text x="14" y="195" font-size="12">verify target=node_2_3</text>
+<rect x="220" y="170" width="39" height="39" fill="rgb(243,224,222)" stroke="#ffffff" />
+<text x="228" y="195" font-size="11">0.14</text>
+<rect x="262" y="170" width="39" height="39" fill="rgb(242,205,201)" stroke="#ffffff" />
+<text x="270" y="195" font-size="11">0.26</text>
+<rect x="304" y="170" width="39" height="39" fill="rgb(240,182,176)" stroke="#ffffff" />
+<text x="312" y="195" font-size="11">0.42</text>
+<rect x="346" y="170" width="39" height="39" fill="rgb(240,178,172)" stroke="#ffffff" />
+<text x="354" y="195" font-size="11">0.44</text>
+<text x="14" y="237" font-size="12">move target=node_2_4</text>
+<rect x="220" y="212" width="39" height="39" fill="rgb(241,193,188)" stroke="#ffffff" />
+<text x="228" y="237" font-size="11">0.34</text>
+<rect x="262" y="212" width="39" height="39" fill="rgb(238,149,140)" stroke="#ffffff" />
+<text x="270" y="237" font-size="11">0.64</text>
+<rect x="304" y="212" width="39" height="39" fill="rgb(241,195,191)" stroke="#ffffff" />
+<text x="312" y="237" font-size="11">0.33</text>
+<rect x="346" y="212" width="39" height="39" fill="rgb(241,191,186)" stroke="#ffffff" />
+<text x="354" y="237" font-size="11">0.35</text>
+<text x="14" y="279" font-size="12">commit target=node_2_5</text>
+<rect x="220" y="254" width="39" height="39" fill="rgb(240,179,173)" stroke="#ffffff" />
+<text x="228" y="279" font-size="11">0.44</text>
+<rect x="262" y="254" width="39" height="39" fill="rgb(240,172,165)" stroke="#ffffff" />
+<text x="270" y="279" font-size="11">0.48</text>
+<rect x="304" y="254" width="39" height="39" fill="rgb(240,182,175)" stroke="#ffffff" />
+<text x="312" y="279" font-size="11">0.42</text>
+<rect x="346" y="254" width="39" height="39" fill="rgb(241,193,188)" stroke="#ffffff" />
+<text x="354" y="279" font-size="11">0.34</text>
+</svg>

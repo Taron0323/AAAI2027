@@ -1,0 +1,42 @@
+Code-AAAI-最终版/datasets/appworld/data/base_dbs/gmail.db
+Code-AAAI-最终版/datasets/swe-gym/openhands_verifier_trajectories/hf_dataset/train.mixture/data-00000-of-00001.arrow
+Code-AAAI-最终版/datasets/swe-gym/openhands_verifier_trajectories/hf_dataset/train.onpolicy/data-00000-of-00001.arrow
+Code-AAAI-最终版/datasets/swe-gym/swe_gym/hf_dataset/train/data-00000-of-00001.arrow
+Code-AAAI-最终版/third_party/benchmarks/tau2-bench/data/tau2/domains/telecom/tasks_voice.json
+
+Additional files excluded from the GitHub upload copy because the latest upload
+instruction was to exclude large files. These are retained in the local complete
+repository at /Users/futaoran/Desktop/AAAI2027/Code-AAAI-最终版 or can be restored
+from the official upstream benchmark/baseline sources.
+
+Code-AAAI-最终版/third_party/benchmarks/appworld/generate/data/static/shopping_products.py
+Code-AAAI-最终版/third_party/benchmarks/tau2-bench/data/tau2/domains/retail/task_issues/task_5_issue_770466c1.json
+Code-AAAI-最终版/third_party/benchmarks/tau2-bench/data/tau2/domains/telecom/tasks_full.json
+Code-AAAI-最终版/third_party/benchmarks/tau2-bench/data/tau2/domains/telecom/tasks.json
+Code-AAAI-最终版/third_party/benchmarks/tau2-bench/data/tau2/results/final/gpt-4.1-2025-04-14_telecom-workflow_no-user_gpt-4.1-2025-04-14_4trials.json
+Code-AAAI-最终版/third_party/benchmarks/tau2-bench/data/tau2/results/final/gpt-4.1-2025-04-14_telecom-workflow_no-user-op_gpt-4.1-2025-04-14_4trials.json
+Code-AAAI-最终版/third_party/benchmarks/tau2-bench/data/tau2/results/final/gpt-4.1-2025-04-14_telecom_no-user-op_gpt-4.1-2025-04-14_4trials.json
+Code-AAAI-最终版/third_party/benchmarks/tau2-bench/data/tau2/results/final/gpt-4.1-2025-04-14_telecom_default_gpt-4.1-2025-04-14_4trials.json
+Code-AAAI-最终版/third_party/benchmarks/tau2-bench/data/tau2/results/final/o4-mini-2025-04-16_telecom_no-user_gpt-4.1-2025-04-14_4trials.json
+Code-AAAI-最终版/third_party/benchmarks/tau2-bench/data/tau2/results/final/gpt-4.1-mini-2025-04-14_retail_base_gpt-4.1-2025-04-14_4trials.json
+Code-AAAI-最终版/third_party/benchmarks/tau2-bench/data/tau2/results/final/gpt-4.1-2025-04-14_retail_default_gpt-4.1-2025-04-14_4trials.json
+Code-AAAI-最终版/third_party/benchmarks/tau2-bench/data/tau2/results/final/o4-mini-2025-04-16_telecom-workflow_op_gpt-4.1-2025-04-14_4trials.json
+Code-AAAI-最终版/third_party/benchmarks/tau2-bench/data/tau2/results/final/gpt-4.1-mini-2025-04-14_telecom_base_gpt-4.1-2025-04-14_4trials.json
+Code-AAAI-最终版/third_party/benchmarks/tau2-bench/data/tau2/results/final/o4-mini-2025-04-16_telecom-workflow_no-user-op_gpt-4.1-2025-04-14_4trials.json
+Code-AAAI-最终版/third_party/benchmarks/tau2-bench/data/tau2/results/final/gpt-4.1-2025-04-14_telecom_op_gpt-4.1-2025-04-14_4trials.json
+Code-AAAI-最终版/third_party/benchmarks/tau2-bench/data/tau2/results/final/claude-3-7-sonnet-20250219_telecom_default_gpt-4.1-2025-04-14_4trials.json
+Code-AAAI-最终版/third_party/benchmarks/tau2-bench/data/tau2/results/final/o4-mini-2025-04-16_telecom-workflow_default_gpt-4.1-2025-04-14_4trials.json
+Code-AAAI-最终版/third_party/benchmarks/tau2-bench/data/tau2/results/final/o4-mini-2025-04-16_telecom_op_gpt-4.1-2025-04-14_4trials.json
+Code-AAAI-最终版/third_party/benchmarks/tau2-bench/data/tau2/results/final/claude-3-7-sonnet-20250219_airline_default_gpt-4.1-2025-04-14_4trials.json
+Code-AAAI-最终版/third_party/benchmarks/tau2-bench/data/tau2/results/final/gpt-4.1-2025-04-14_telecom-workflow_op_gpt-4.1-2025-04-14_4trials.json
+Code-AAAI-最终版/third_party/benchmarks/tau2-bench/data/tau2/results/final/o4-mini-2025-04-16_telecom_no-user-op_gpt-4.1-2025-04-14_4trials.json
+Code-AAAI-最终版/third_party/benchmarks/tau2-bench/data/tau2/results/final/o4-mini-2025-04-16_telecom-workflow_no-user_gpt-4.1-2025-04-14_4trials.json
+Code-AAAI-最终版/third_party/benchmarks/tau2-bench/data/tau2/results/final/gpt-4.1-2025-04-14_telecom-workflow_default_gpt-4.1-2025-04-14_4trials.json
+Code-AAAI-最终版/third_party/benchmarks/tau2-bench/data/tau2/results/final/claude-3-7-sonnet-20250219_retail_default_gpt-4.1-2025-04-14_4trials.json
+Code-AAAI-最终版/third_party/benchmarks/tau2-bench/data/tau2/results/final/gpt-4.1-2025-04-14_telecom_no-user_gpt-4.1-2025-04-14_4trials.json
+Code-AAAI-最终版/third_party/benchmarks/tau2-bench/data/tau2/results/final/o4-mini-2025-04-16_retail_default_gpt-4.1-2025-04-14_4trials.json
+Code-AAAI-最终版/third_party/benchmarks/tau2-bench/data/tau2/results/final/o4-mini-2025-04-16_telecom_default_gpt-4.1-2025-04-14_4trials.json
+Code-AAAI-最终版/third_party/baselines/PreAct/LanguageAgentTreeSearch/hotpot/data/hotpot_train_v1.1_simplified.json
+Code-AAAI-最终版/third_party/baselines/ReAct/data/hotpot_train_v1.1_simplified.json
+Code-AAAI-最终版/third_party/baselines/LanguageAgentTreeSearch/hotpot/data/hotpot_train_v1.1_simplified.json
+Code-AAAI-最终版/third_party/baselines/LanguageAgentTreeSearch/programming/root/test_mcts_hard_acc_full_4tst_temp_2/humaneval-py._mcts_8_gpt-3.5-turbo_pass_at_k_1_py.jsonl

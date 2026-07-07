@@ -1,0 +1,337 @@
+{
+  "assets": {
+    "auxiliary_code": {
+      "control_tasks": {
+        "archive_url": "https://api.github.com/repos/john-hewitt/control-tasks/tarball/master",
+        "available": true,
+        "download_command": "",
+        "exists": true,
+        "install_command": "Follow upstream README. This checkout may be archive-managed if git clone is blocked.",
+        "markers": {
+          "README.md": true,
+          "control-tasks": true
+        },
+        "notes": "Auxiliary control-task code for ELD/probing anti-confound checks.",
+        "path": "/Users/futaoran/Desktop/AAAI2027_GitHub_upload_clean/Code-AAAI-\u6700\u7ec8\u7248/third_party/auxiliary/control-tasks",
+        "title": "Hewitt and Liang control tasks",
+        "url": "https://github.com/john-hewitt/control-tasks.git"
+      },
+      "openrlhf": {
+        "archive_url": "https://github.com/OpenRLHF/OpenRLHF/archive/refs/heads/main.zip",
+        "available": true,
+        "download_command": "",
+        "exists": true,
+        "install_command": "Follow upstream README; used as an optional RLHF/SFT training framework.",
+        "markers": {
+          "README.md": true,
+          "pyproject.toml": true
+        },
+        "notes": "Optional training framework; no model weights are downloaded.",
+        "path": "/Users/futaoran/Desktop/AAAI2027_GitHub_upload_clean/Code-AAAI-\u6700\u7ec8\u7248/third_party/auxiliary/OpenRLHF",
+        "title": "OpenRLHF",
+        "url": "https://github.com/OpenRLHF/OpenRLHF.git"
+      },
+      "verl": {
+        "archive_url": "https://github.com/verl-project/verl/archive/refs/heads/main.zip",
+        "available": true,
+        "download_command": "",
+        "exists": true,
+        "install_command": "Follow upstream README; used as an optional large-scale RL/SFT training framework.",
+        "markers": {
+          "README.md": true,
+          "pyproject.toml": true
+        },
+        "notes": "Optional training framework; no model weights are downloaded.",
+        "path": "/Users/futaoran/Desktop/AAAI2027_GitHub_upload_clean/Code-AAAI-\u6700\u7ec8\u7248/third_party/auxiliary/verl",
+        "title": "verl",
+        "url": "https://github.com/verl-project/verl.git"
+      }
+    },
+    "baseline_code": {
+      "lats": {
+        "archive_url": "https://github.com/lapisrocks/LanguageAgentTreeSearch/archive/refs/heads/main.zip",
+        "available": true,
+        "download_command": "",
+        "exists": true,
+        "install_command": "Follow upstream README after cloning.",
+        "markers": {
+          "README.md": true
+        },
+        "notes": "Official/public LATS reference code for adapter integration.",
+        "path": "/Users/futaoran/Desktop/AAAI2027_GitHub_upload_clean/Code-AAAI-\u6700\u7ec8\u7248/third_party/baselines/LanguageAgentTreeSearch",
+        "title": "Language Agent Tree Search",
+        "url": "https://github.com/lapisrocks/LanguageAgentTreeSearch.git"
+      },
+      "plan_and_act": {
+        "archive_url": "https://github.com/SqueezeAILab/plan-and-act/archive/refs/heads/main.zip",
+        "available": true,
+        "download_command": "",
+        "exists": true,
+        "install_command": "Follow upstream README after cloning.",
+        "markers": {
+          "README.md": true
+        },
+        "notes": "Plan-and-Act reference code if upstream is reachable.",
+        "path": "/Users/futaoran/Desktop/AAAI2027_GitHub_upload_clean/Code-AAAI-\u6700\u7ec8\u7248/third_party/baselines/plan-and-act",
+        "title": "Plan-and-Act",
+        "url": "https://github.com/SqueezeAILab/plan-and-act.git"
+      },
+      "preact": {
+        "archive_url": "https://github.com/Fu-Dayuan/PreAct/archive/refs/heads/main.zip",
+        "available": true,
+        "download_command": "",
+        "exists": true,
+        "install_command": "Follow upstream README after cloning.",
+        "markers": {
+          "README.md": true
+        },
+        "notes": "PreAct reference code if upstream is reachable.",
+        "path": "/Users/futaoran/Desktop/AAAI2027_GitHub_upload_clean/Code-AAAI-\u6700\u7ec8\u7248/third_party/baselines/PreAct",
+        "title": "PreAct",
+        "url": "https://github.com/Fu-Dayuan/PreAct.git"
+      },
+      "react": {
+        "archive_url": "https://github.com/ysymyth/ReAct/archive/refs/heads/master.zip",
+        "available": true,
+        "download_command": "",
+        "exists": true,
+        "install_command": "Read upstream examples; ForeAct has a built-in runnable ReAct policy.",
+        "markers": {
+          "README.md": true
+        },
+        "notes": "Reference implementation; built-in smoke policy remains dependency-free.",
+        "path": "/Users/futaoran/Desktop/AAAI2027_GitHub_upload_clean/Code-AAAI-\u6700\u7ec8\u7248/third_party/baselines/ReAct",
+        "title": "ReAct reference",
+        "url": "https://github.com/ysymyth/ReAct.git"
+      },
+      "reflexion": {
+        "archive_url": "https://github.com/noahshinn/reflexion/archive/refs/heads/main.zip",
+        "available": true,
+        "download_command": "",
+        "exists": true,
+        "install_command": "Follow upstream README after cloning.",
+        "markers": {
+          "README.md": true
+        },
+        "notes": "Official Reflexion reference implementation.",
+        "path": "/Users/futaoran/Desktop/AAAI2027_GitHub_upload_clean/Code-AAAI-\u6700\u7ec8\u7248/third_party/baselines/reflexion",
+        "title": "Reflexion",
+        "url": "https://github.com/noahshinn/reflexion.git"
+      },
+      "webdreamer": {
+        "archive_url": "https://github.com/OSU-NLP-Group/WebDreamer/archive/refs/heads/main.zip",
+        "available": true,
+        "download_command": "",
+        "exists": true,
+        "install_command": "Follow upstream README after cloning.",
+        "markers": {
+          "README.md": true
+        },
+        "notes": "Official WebDreamer reference code for adapter integration.",
+        "path": "/Users/futaoran/Desktop/AAAI2027_GitHub_upload_clean/Code-AAAI-\u6700\u7ec8\u7248/third_party/baselines/WebDreamer",
+        "title": "WebDreamer",
+        "url": "https://github.com/OSU-NLP-Group/WebDreamer.git"
+      }
+    },
+    "benchmark_code": {
+      "appworld": {
+        "archive_url": "https://github.com/StonyBrookNLP/appworld/archive/refs/heads/main.zip",
+        "available": true,
+        "download_command": "",
+        "exists": true,
+        "install_command": "python3 -m pip install -e third_party/benchmarks/appworld",
+        "markers": {
+          "README.md": true
+        },
+        "notes": "Official AppWorld harness code. Official data must be downloaded via AppWorld instructions.",
+        "path": "/Users/futaoran/Desktop/AAAI2027_GitHub_upload_clean/Code-AAAI-\u6700\u7ec8\u7248/third_party/benchmarks/appworld",
+        "title": "AppWorld",
+        "url": "https://github.com/StonyBrookNLP/appworld.git"
+      },
+      "mini_swe_agent": {
+        "archive_url": "https://github.com/SWE-agent/mini-swe-agent/archive/refs/heads/main.zip",
+        "available": true,
+        "download_command": "",
+        "exists": true,
+        "install_command": "python3 -m pip install -e third_party/benchmarks/mini-swe-agent",
+        "markers": {
+          "README.md": true,
+          "pyproject.toml": true
+        },
+        "notes": "Recommended lightweight SWE-bench execution harness.",
+        "path": "/Users/futaoran/Desktop/AAAI2027_GitHub_upload_clean/Code-AAAI-\u6700\u7ec8\u7248/third_party/benchmarks/mini-swe-agent",
+        "title": "mini-SWE-agent",
+        "url": "https://github.com/SWE-agent/mini-swe-agent.git"
+      },
+      "swe_bench": {
+        "archive_url": "https://github.com/swe-bench/SWE-bench/archive/refs/heads/main.zip",
+        "available": true,
+        "download_command": "",
+        "exists": true,
+        "install_command": "python3 -m pip install -e third_party/benchmarks/SWE-bench",
+        "markers": {
+          "README.md": true
+        },
+        "notes": "Official SWE-bench harness used for SWE-bench Verified evaluation.",
+        "path": "/Users/futaoran/Desktop/AAAI2027_GitHub_upload_clean/Code-AAAI-\u6700\u7ec8\u7248/third_party/benchmarks/SWE-bench",
+        "title": "SWE-bench",
+        "url": "https://github.com/swe-bench/SWE-bench.git"
+      },
+      "swe_gym": {
+        "archive_url": "https://github.com/SWE-Gym/SWE-Gym/archive/refs/heads/main.zip",
+        "available": true,
+        "download_command": "",
+        "exists": true,
+        "install_command": "python3 -m pip install -e third_party/benchmarks/SWE-Gym",
+        "markers": {
+          "README.md": true
+        },
+        "notes": "Official SWE-Gym code/environment layer.",
+        "path": "/Users/futaoran/Desktop/AAAI2027_GitHub_upload_clean/Code-AAAI-\u6700\u7ec8\u7248/third_party/benchmarks/SWE-Gym",
+        "title": "SWE-Gym",
+        "url": "https://github.com/SWE-Gym/SWE-Gym.git"
+      },
+      "tau2_bench": {
+        "archive_url": "https://github.com/sierra-research/tau2-bench/archive/refs/heads/main.zip",
+        "available": true,
+        "download_command": "",
+        "exists": true,
+        "install_command": "python3 -m pip install -e third_party/benchmarks/tau2-bench",
+        "markers": {
+          "README.md": true
+        },
+        "notes": "Official tau2 benchmark code. Datasets remain outside git.",
+        "path": "/Users/futaoran/Desktop/AAAI2027_GitHub_upload_clean/Code-AAAI-\u6700\u7ec8\u7248/third_party/benchmarks/tau2-bench",
+        "title": "tau2-bench",
+        "url": "https://github.com/sierra-research/tau2-bench.git"
+      }
+    },
+    "datasets": {
+      "appworld_data": {
+        "archive_url": "",
+        "available": false,
+        "download_command": "Install AppWorld and run its official data download command, then set APPWORLD_ROOT.",
+        "env_value": "",
+        "env_var": "APPWORLD_ROOT",
+        "exists": false,
+        "install_command": "",
+        "markers": {
+          "data": false
+        },
+        "notes": "Do not mix test data into training generation.",
+        "path": "/Users/futaoran/Desktop/AAAI2027_GitHub_upload_clean/Code-AAAI-\u6700\u7ec8\u7248/datasets/appworld",
+        "title": "AppWorld official data",
+        "url": ""
+      },
+      "swe_bench_verified_data": {
+        "archive_url": "",
+        "available": false,
+        "download_command": "Use SWE-bench/Hugging Face official Verified setup, then set SWE_BENCH_ROOT.",
+        "env_value": "",
+        "env_var": "SWE_BENCH_ROOT",
+        "exists": false,
+        "install_command": "",
+        "markers": {
+          "verified": false
+        },
+        "notes": "Verified instances must come from official sources.",
+        "path": "/Users/futaoran/Desktop/AAAI2027_GitHub_upload_clean/Code-AAAI-\u6700\u7ec8\u7248/datasets/swe-bench",
+        "title": "SWE-bench Verified data",
+        "url": ""
+      },
+      "swe_gym_data": {
+        "archive_url": "",
+        "available": false,
+        "download_command": "Follow SWE-Gym upstream setup for environments and data, then set SWE_GYM_ROOT.",
+        "env_value": "",
+        "env_var": "SWE_GYM_ROOT",
+        "exists": false,
+        "install_command": "",
+        "markers": {},
+        "notes": "Large environment assets are local-only.",
+        "path": "/Users/futaoran/Desktop/AAAI2027_GitHub_upload_clean/Code-AAAI-\u6700\u7ec8\u7248/datasets/swe-gym",
+        "title": "SWE-Gym official environments/data",
+        "url": ""
+      },
+      "tau2_bench_data": {
+        "archive_url": "",
+        "available": true,
+        "download_command": "Follow tau2-bench upstream dataset instructions, then set TAU2_BENCH_ROOT.",
+        "env_value": "",
+        "env_var": "TAU2_BENCH_ROOT",
+        "exists": true,
+        "install_command": "",
+        "markers": {
+          "airline": true,
+          "retail": true,
+          "telecom": true
+        },
+        "notes": "Do not commit benchmark data.",
+        "path": "/Users/futaoran/Desktop/AAAI2027_GitHub_upload_clean/Code-AAAI-\u6700\u7ec8\u7248/third_party/benchmarks/tau2-bench/data/tau2/domains",
+        "title": "tau2-bench official data",
+        "url": ""
+      }
+    },
+    "nested_archive_code": {
+      "reflexion_leetcode_env": {
+        "archive_url": "https://codeload.github.com/GammaTauAI/leetcode-hard-gym/tar.gz/228163abdc983712bebfd8e26f7e7d360830e648",
+        "available": true,
+        "download_command": "",
+        "exists": true,
+        "install_command": "bash scripts/bootstrap_external_assets.sh nested",
+        "markers": {
+          ".foreact_archive_source": true,
+          "README.md": true,
+          "pyproject.toml": true
+        },
+        "notes": "Nested Reflexion submodule pinned by the checked-out Reflexion commit; archive-managed when git clone is unstable.",
+        "path": "/Users/futaoran/Desktop/AAAI2027_GitHub_upload_clean/Code-AAAI-\u6700\u7ec8\u7248/third_party/baselines/reflexion/programming_runs/executors/leetcode_env",
+        "title": "Reflexion leetcode-hard-gym submodule",
+        "url": "https://github.com/GammaTauAI/leetcode-hard-gym.git"
+      },
+      "verl_recipe": {
+        "archive_url": "https://codeload.github.com/verl-project/verl-recipe/tar.gz/e7f889574b8301cc0f0fc1d57c6d67f31ffeb689",
+        "available": true,
+        "download_command": "",
+        "exists": true,
+        "install_command": "bash scripts/bootstrap_external_assets.sh nested",
+        "markers": {
+          ".foreact_archive_source": true,
+          "LICENSE": true,
+          "pyproject.toml": true
+        },
+        "notes": "Nested verl submodule pinned by the checked-out verl commit; archive-managed when git clone is unstable.",
+        "path": "/Users/futaoran/Desktop/AAAI2027_GitHub_upload_clean/Code-AAAI-\u6700\u7ec8\u7248/third_party/auxiliary/verl/recipe",
+        "title": "verl recipe submodule",
+        "url": "https://github.com/verl-project/verl-recipe.git"
+      }
+    }
+  },
+  "summary": {
+    "auxiliary_code": {
+      "available": 3,
+      "missing": 0,
+      "total": 3
+    },
+    "baseline_code": {
+      "available": 6,
+      "missing": 0,
+      "total": 6
+    },
+    "benchmark_code": {
+      "available": 5,
+      "missing": 0,
+      "total": 5
+    },
+    "datasets": {
+      "available": 1,
+      "missing": 3,
+      "total": 4
+    },
+    "nested_archive_code": {
+      "available": 2,
+      "missing": 0,
+      "total": 2
+    }
+  }
+}

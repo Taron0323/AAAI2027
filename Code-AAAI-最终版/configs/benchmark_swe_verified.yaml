@@ -1,0 +1,7 @@
+benchmark: swe_bench_verified
+out: outputs/benchmark/swe_bench_verified_run_plan.json
+dataset_name: SWE-bench/SWE-bench_Verified
+predictions_path: gold
+max_workers: 1
+run_id: foreact-verified
+execute: false

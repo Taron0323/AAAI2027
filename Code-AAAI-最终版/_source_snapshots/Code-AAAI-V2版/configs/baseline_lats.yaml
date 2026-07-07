@@ -1,0 +1,3 @@
+baseline: lats
+out: outputs/baselines/lats_run_plan.json
+execute: false

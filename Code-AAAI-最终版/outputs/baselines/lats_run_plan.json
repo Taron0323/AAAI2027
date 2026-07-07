@@ -1,0 +1,16 @@
+{
+  "baseline": "lats",
+  "command": [
+    "python3",
+    "programming/main.py",
+    "--help"
+  ],
+  "cwd": "third_party/baselines/LanguageAgentTreeSearch",
+  "executed": false,
+  "missing_paths": [],
+  "notes": "Official LATS checkout. Use programming/main.py for SWE-like tasks or domain-specific run.py scripts.",
+  "source_paths": [
+    "third_party/baselines/LanguageAgentTreeSearch"
+  ],
+  "status": "ready_source"
+}

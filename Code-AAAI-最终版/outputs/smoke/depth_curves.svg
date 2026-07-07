@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420">
+<text x="54" y="28" font-size="18" font-weight="700">PlanDepth SR(d)</text>
+<line x1="54" y1="366" x2="666" y2="366" stroke="#333" />
+<line x1="54" y1="54" x2="54" y2="366" stroke="#333" />
+<text x="54" y="408" font-size="12">depth / method</text>
+<text x="10" y="36" font-size="12">success</text>
+<polyline fill="none" stroke="#2f6f9f" stroke-width="3" points="54.0,54.0 360.0,366.0 666.0,366.0" />
+<circle cx="54.0" cy="54.0" r="4" fill="#2f6f9f" />
+<circle cx="360.0" cy="366.0" r="4" fill="#2f6f9f" />
+<circle cx="666.0" cy="366.0" r="4" fill="#2f6f9f" />
+<text x="506" y="54" font-size="13" fill="#2f6f9f">react</text>
+<polyline fill="none" stroke="#d17b0f" stroke-width="3" points="54.0,54.0 360.0,54.0 666.0,54.0" />
+<circle cx="54.0" cy="54.0" r="4" fill="#d17b0f" />
+<circle cx="360.0" cy="54.0" r="4" fill="#d17b0f" />
+<circle cx="666.0" cy="54.0" r="4" fill="#d17b0f" />
+<text x="506" y="76" font-size="13" fill="#d17b0f">react_sft</text>
+<polyline fill="none" stroke="#3a8f5b" stroke-width="3" points="54.0,366.0 360.0,54.0 666.0,54.0" />
+<circle cx="54.0" cy="366.0" r="4" fill="#3a8f5b" />
+<circle cx="360.0" cy="54.0" r="4" fill="#3a8f5b" />
+<circle cx="666.0" cy="54.0" r="4" fill="#3a8f5b" />
+<text x="506" y="98" font-size="13" fill="#3a8f5b">token_mtp</text>
+<polyline fill="none" stroke="#8a5fbf" stroke-width="3" points="54.0,366.0 360.0,54.0 666.0,54.0" />
+<circle cx="54.0" cy="366.0" r="4" fill="#8a5fbf" />
+<circle cx="360.0" cy="54.0" r="4" fill="#8a5fbf" />
+<circle cx="666.0" cy="54.0" r="4" fill="#8a5fbf" />
+<text x="506" y="120" font-size="13" fill="#8a5fbf">plan_and_act</text>
+<polyline fill="none" stroke="#b84545" stroke-width="3" points="54.0,366.0 360.0,54.0 666.0,54.0" />
+<circle cx="54.0" cy="366.0" r="4" fill="#b84545" />
+<circle cx="360.0" cy="54.0" r="4" fill="#b84545" />
+<circle cx="666.0" cy="54.0" r="4" fill="#b84545" />
+<text x="506" y="142" font-size="13" fill="#b84545">lats_webdreamer</text>
+<polyline fill="none" stroke="#2f6f9f" stroke-width="3" points="54.0,288.0 360.0,210.0 666.0,132.0" />
+<circle cx="54.0" cy="288.0" r="4" fill="#2f6f9f" />
+<circle cx="360.0" cy="210.0" r="4" fill="#2f6f9f" />
+<circle cx="666.0" cy="132.0" r="4" fill="#2f6f9f" />
+<text x="506" y="164" font-size="13" fill="#2f6f9f">foreact_latent_rerank</text>
+</svg>

@@ -1,0 +1,14 @@
+{
+  "base_url": "http://127.0.0.1:8000/v1/chat/completions",
+  "command": [
+    "python3",
+    "-m",
+    "vllm.entrypoints.openai.api_server",
+    "--model",
+    "outputs/foreact_4b_milestone/mode_a",
+    "--port",
+    "8000",
+    "--tensor-parallel-size",
+    "1"
+  ]
+}

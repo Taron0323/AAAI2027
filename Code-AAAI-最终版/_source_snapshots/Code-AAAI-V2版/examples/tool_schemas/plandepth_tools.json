@@ -1,0 +1,34 @@
+{
+  "tools": [
+    {
+      "name": "inspect",
+      "parameters": {
+        "target": "string"
+      }
+    },
+    {
+      "name": "move",
+      "parameters": {
+        "target": "string"
+      }
+    },
+    {
+      "name": "verify",
+      "parameters": {
+        "target": "string"
+      }
+    },
+    {
+      "name": "commit",
+      "parameters": {
+        "target": "string"
+      }
+    },
+    {
+      "name": "query_constraint",
+      "parameters": {
+        "target": "string"
+      }
+    }
+  ]
+}

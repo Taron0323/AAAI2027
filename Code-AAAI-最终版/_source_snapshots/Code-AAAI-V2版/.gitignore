@@ -1,0 +1,34 @@
+# Python/runtime
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Local environments
+.venv/
+.venv-*/
+venv/
+env/
+
+# Secrets and local overrides
+.env
+.env.*
+*.log
+
+# Generated experiment artifacts and official datasets.
+# Recreate these with scripts/run_full_pipeline.sh and the dataset setup scripts.
+outputs/
+datasets/
+
+# External checkouts are fetched/installed by scripts and tracked only by manifest.
+third_party/**
+!third_party/
+!third_party/README.md
+!third_party/assets.yaml
+
+# Build artifacts
+build/
+dist/

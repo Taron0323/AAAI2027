@@ -1,0 +1,17 @@
+{
+  "counts": {
+    "commit::target": 12,
+    "inspect::target": 12,
+    "move::target": 16,
+    "verify::target": 8
+  },
+  "mode": "type_arg",
+  "size": 5,
+  "sketches": [
+    "commit::target",
+    "inspect::target",
+    "move::target",
+    "verify::target",
+    "<unk>"
+  ]
+}

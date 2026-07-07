@@ -1,0 +1,4 @@
+aligned_examples: outputs/smoke/aligned_examples.jsonl
+out: outputs/control_tasks/random_labels.jsonl
+seed: 13
+control_tasks_source: third_party/auxiliary/control-tasks

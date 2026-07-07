@@ -1,0 +1,6 @@
+ablation,zeta_mode,expected_shape,reason
+A_prime,token,low,surface token prediction is not aligned with decision feasibility
+A_prime,fsp_summary,mid,future summary loses per-depth temporal structure
+A_prime,type,mid,operation type is often too coarse
+A_prime,type_arg,high,main semantic sketch: operation type x primary argument slot
+A_prime,vq_mock,high_or_mid,manual-schema-free VQ-style smoke interface
