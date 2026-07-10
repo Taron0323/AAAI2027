@@ -1,0 +1,12 @@
+{
+  "behavioral_churn_rate": 0.0,
+  "dead_end_rate": 0.0,
+  "extra_forward_per_task": 0.0,
+  "sr_by_depth": {
+    "2": 0.0,
+    "4": 1.0,
+    "6": 1.0
+  },
+  "success_rate": 0.6666666666666666,
+  "tokens_per_task": 8.0
+}

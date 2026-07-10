@@ -1,0 +1,7 @@
+benchmark: appworld
+out: outputs/benchmark/appworld_run_plan.json
+experiment_name: foreact
+split: test_normal
+root: datasets/appworld
+python: .venv-appworld/bin/python
+execute: false

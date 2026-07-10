@@ -1,0 +1,20 @@
+{
+  "columns": [
+    "repo",
+    "instance_id",
+    "base_commit",
+    "patch",
+    "test_patch",
+    "problem_statement",
+    "hints_text",
+    "created_at",
+    "version",
+    "FAIL_TO_PASS",
+    "PASS_TO_PASS",
+    "environment_setup_commit",
+    "difficulty"
+  ],
+  "name": "SWE-bench/SWE-bench_Verified",
+  "rows": 500,
+  "split": "test"
+}

@@ -1,0 +1,331 @@
+{
+  "ablations": [
+    {
+      "implemented": "config",
+      "key": "A",
+      "name": "remove forecast heads",
+      "role": "contribution 1"
+    },
+    {
+      "implemented": "config",
+      "key": "A_prime_token",
+      "name": "zeta=token",
+      "role": "granularity spectrum"
+    },
+    {
+      "implemented": "config",
+      "key": "A_prime_fsp",
+      "name": "FSP-style future summary",
+      "role": "nearest-neighbor control"
+    },
+    {
+      "implemented": "config",
+      "key": "A_prime_type",
+      "name": "operation type only",
+      "role": "granularity spectrum"
+    },
+    {
+      "implemented": "config",
+      "key": "A_prime_type_arg",
+      "name": "operation type x primary argument",
+      "role": "main setting"
+    },
+    {
+      "implemented": "stub",
+      "key": "A_prime_vq512",
+      "name": "VQ-512 learned sketches",
+      "role": "manual-schema-free variant"
+    },
+    {
+      "implemented": "config",
+      "key": "B",
+      "name": "remove PCR",
+      "role": "contribution 2"
+    },
+    {
+      "implemented": "config",
+      "key": "B_prime",
+      "name": "remove branch-aware weighting",
+      "role": "PCR component"
+    },
+    {
+      "implemented": "config",
+      "key": "C",
+      "name": "disable latent rerank",
+      "role": "system mode A"
+    },
+    {
+      "implemented": "config",
+      "key": "C_prime",
+      "name": "success head vs forecast head scoring",
+      "role": "rerank component"
+    },
+    {
+      "implemented": "config",
+      "key": "D",
+      "name": "H sweep",
+      "role": "horizon"
+    },
+    {
+      "implemented": "config",
+      "key": "E",
+      "name": "K sweep",
+      "role": "soft target necessity"
+    },
+    {
+      "implemented": "external",
+      "key": "E_prime",
+      "name": "GPT-5.5 second teacher subset",
+      "role": "teacher independence"
+    },
+    {
+      "implemented": "config",
+      "key": "F",
+      "name": "curriculum/lambda/mu sweep",
+      "role": "training stability"
+    },
+    {
+      "implemented": "config",
+      "key": "G_predict_past",
+      "name": "predict past sketches",
+      "role": "anti-confounding control"
+    },
+    {
+      "implemented": "config",
+      "key": "G_flops_matched",
+      "name": "FLOPs-matched SFT",
+      "role": "anti-confounding control"
+    }
+  ],
+  "baselines": [
+    {
+      "implemented": "adapter",
+      "key": "react",
+      "name": "Qwen3-Instruct + ReAct prompt",
+      "role": "vanilla"
+    },
+    {
+      "implemented": "adapter",
+      "key": "react_sft",
+      "name": "ReAct-SFT",
+      "role": "same teacher data/FLOPs"
+    },
+    {
+      "implemented": "smoke",
+      "key": "plan_and_act",
+      "name": "Plan-and-Act / Pre-Act",
+      "role": "explicit text planning"
+    },
+    {
+      "implemented": "smoke",
+      "key": "lats_webdreamer",
+      "name": "LATS / WebDreamer-style search",
+      "role": "explicit lookahead"
+    },
+    {
+      "implemented": "adapter",
+      "key": "token_mtp",
+      "name": "AR + token-level MTP",
+      "role": "critical action-vs-token baseline"
+    },
+    {
+      "implemented": "external",
+      "key": "gpt55_reference",
+      "name": "GPT-5.5 zero-shot ReAct",
+      "role": "frontier reference only"
+    }
+  ],
+  "contribution_alignment": [
+    {
+      "ablations": [
+        "A",
+        "A_prime",
+        "token_mtp"
+      ],
+      "contribution": "C1",
+      "metrics": [
+        "success_rate",
+        "ELD"
+      ],
+      "module": "LAP",
+      "paper_guardrail": "action-level vs token-level must remain explicit",
+      "section": "6.1"
+    },
+    {
+      "ablations": [
+        "B",
+        "B_prime"
+      ],
+      "contribution": "C2",
+      "metrics": [
+        "behavioral_churn_rate",
+        "dead_end_rate",
+        "forecast_entropy"
+      ],
+      "module": "PCR",
+      "paper_guardrail": "PCR KL direction is KL(sg[q_{t+1}^{h-1}] || q_t^h)",
+      "section": "6.2"
+    },
+    {
+      "ablations": [
+        "C",
+        "C_prime"
+      ],
+      "contribution": "C3",
+      "metrics": [
+        "extra_forward_per_task",
+        "success_overhead_pareto"
+      ],
+      "module": "Latent Lookahead",
+      "paper_guardrail": "Mode A remains byte-for-byte ReAct shaped",
+      "section": "6.3"
+    }
+  ],
+  "design_choices": [
+    {
+      "ablation": "A_prime",
+      "choice": "action semantic sketch",
+      "reason": "decision granularity aligns with feasibility",
+      "rejected_alternative": "token-level or FSP future summary"
+    },
+    {
+      "ablation": "E",
+      "choice": "K-rollout soft target",
+      "reason": "future is a distribution under stochastic branching",
+      "rejected_alternative": "one-hot hard target"
+    },
+    {
+      "ablation": "B",
+      "choice": "forward KL stop-gradient PCR",
+      "reason": "only the forward direction recovers the branch marginal in expectation",
+      "rejected_alternative": "reverse KL or no stop-gradient"
+    },
+    {
+      "ablation": "B_prime",
+      "choice": "branch-aware weighting",
+      "reason": "high-entropy futures are partly unknowable",
+      "rejected_alternative": "uniform weighting"
+    },
+    {
+      "ablation": "C",
+      "choice": "train-time-only heads",
+      "reason": "default Mode A must have zero inference overhead",
+      "rejected_alternative": "mandatory inference heads"
+    }
+  ],
+  "hypotheses": [
+    {
+      "claim": "LAP improves long-horizon success over same-data same-FLOPs ReAct-SFT and token-MTP.",
+      "contributions": [
+        "C1"
+      ],
+      "experiments": [
+        "main_results",
+        "plandepth_depth_curve"
+      ],
+      "key": "H1",
+      "metrics": [
+        "success_rate",
+        "pass^k",
+        "TGC",
+        "SGC",
+        "resolve_rate",
+        "SR(d)"
+      ],
+      "name": "effectiveness"
+    },
+    {
+      "claim": "ForeAct raises Effective Lookahead Depth under the same Fig.2/Fig.5 probe contract.",
+      "contributions": [
+        "C1",
+        "C2"
+      ],
+      "experiments": [
+        "eld_recovery",
+        "ablation_A",
+        "control_G_predict_past"
+      ],
+      "key": "H2",
+      "metrics": [
+        "effective_lookahead_depth",
+        "future_signal_by_depth"
+      ],
+      "name": "mechanism_eld"
+    },
+    {
+      "claim": "PCR reduces behavioral churn and delayed dead-end entry under stochastic branching.",
+      "contributions": [
+        "C2"
+      ],
+      "experiments": [
+        "ablation_B",
+        "ablation_B_prime",
+        "tau2_random_branching"
+      ],
+      "key": "H3",
+      "metrics": [
+        "behavioral_churn_rate",
+        "dead_end_rate",
+        "pass4_minus_pass1"
+      ],
+      "name": "robustness"
+    },
+    {
+      "claim": "Mode A is ReAct-identical at inference; Mode B provides bounded latent rerank overhead.",
+      "contributions": [
+        "C3"
+      ],
+      "experiments": [
+        "mode_A",
+        "mode_B",
+        "ablation_C",
+        "ablation_C_prime"
+      ],
+      "key": "H4",
+      "metrics": [
+        "tokens_per_task",
+        "extra_forward_per_task",
+        "success_overhead_pareto"
+      ],
+      "name": "efficiency"
+    },
+    {
+      "claim": "ForeAct gains vanish or shrink for shallow tasks, deterministic settings, or bad zeta granularity.",
+      "contributions": [
+        "C1",
+        "C2"
+      ],
+      "experiments": [
+        "plandepth_boundary",
+        "ablation_A_prime",
+        "ablation_D",
+        "ablation_E"
+      ],
+      "key": "H5",
+      "metrics": [
+        "gain_vs_depth",
+        "gain_vs_randomness",
+        "gain_vs_zeta"
+      ],
+      "name": "boundaries"
+    }
+  ],
+  "remark_1_degenerate_corners": [
+    {
+      "degenerate_corner": "H=0",
+      "method": "greedy ReAct"
+    },
+    {
+      "degenerate_corner": "zeta=identity, depth measured in tokens",
+      "method": "token-MTP"
+    },
+    {
+      "degenerate_corner": "bag-of-future sketches, no per-depth heads",
+      "method": "FSP future summary"
+    },
+    {
+      "degenerate_corner": "K=1, deterministic one-hot targets, mu=0",
+      "method": "VideoPlan-style action MTP"
+    }
+  ]
+}

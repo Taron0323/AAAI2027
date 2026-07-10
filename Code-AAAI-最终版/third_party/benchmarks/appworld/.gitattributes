@@ -1,0 +1,2 @@
+src/appworld/.source/*.bundle -filter -diff -merge text
+generate/.source/*.bundle -filter -diff -merge text

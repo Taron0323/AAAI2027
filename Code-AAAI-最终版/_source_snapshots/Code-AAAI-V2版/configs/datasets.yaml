@@ -1,0 +1,36 @@
+# External dataset paths are intentionally placeholders.
+# Set these to local official dataset/harness locations before real runs.
+
+tau2_bench:
+  package: tau2
+  required_paths:
+    root: third_party/benchmarks/tau2-bench/data/tau2/domains
+    airline: third_party/benchmarks/tau2-bench/data/tau2/domains/airline
+    retail: third_party/benchmarks/tau2-bench/data/tau2/domains/retail
+    telecom: third_party/benchmarks/tau2-bench/data/tau2/domains/telecom
+  setup: "Official tau2 domain data is included in the tau2-bench submodule. Override with TAU2_BENCH_ROOT if desired."
+
+appworld:
+  package: appworld
+  required_paths:
+    root: datasets/appworld
+    data: datasets/appworld/data
+    train_split: datasets/appworld/data/datasets/train.txt
+  setup: "Install AppWorld, download official splits, then set APPWORLD_ROOT."
+
+swe_gym:
+  package: swegym
+  required_paths:
+    root: datasets/swe-gym
+    swe_gym: datasets/swe-gym/swe_gym/DATASET_READY.json
+    swe_gym_lite: datasets/swe-gym/swe_gym_lite/DATASET_READY.json
+    openhands_sft: datasets/swe-gym/openhands_sft_trajectories/DATASET_READY.json
+    openhands_verifier: datasets/swe-gym/openhands_verifier_trajectories/DATASET_READY.json
+  setup: "Install SWE-Gym and set SWE_GYM_ROOT to the training environment/data root."
+
+swe_bench_verified:
+  package: swebench
+  required_paths:
+    root: datasets/swe-bench
+    verified: datasets/swe-bench/verified/DATASET_READY.json
+  setup: "Install SWE-bench, download/configure Verified, then set SWE_BENCH_ROOT."

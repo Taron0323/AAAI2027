@@ -1,0 +1,41 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "open_hands-sft-trajectories",
+  "dataset_size": 31805636,
+  "description": "",
+  "download_size": 10379409,
+  "features": {
+    "messages": {
+      "feature": {
+        "content": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "role": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      "_type": "List"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 42185045,
+  "splits": {
+    "train.success.oss": {
+      "name": "train.success.oss",
+      "num_bytes": 31805636,
+      "num_examples": 491,
+      "dataset_name": "open_hands-sft-trajectories"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

@@ -1,0 +1,7 @@
+method,success_rate,tokens_per_task,extra_forward_per_task
+react,0.3333333333333333,6.0,0.0
+react_sft,1.0,8.0,0.0
+token_mtp,0.6666666666666666,8.0,0.0
+plan_and_act,0.6666666666666666,16.0,1.0
+lats_webdreamer,0.6666666666666666,32.0,16.0
+foreact_latent_rerank,0.5,8.0,12.0

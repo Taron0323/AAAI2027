@@ -1,0 +1,18 @@
+{
+  "counts": {
+    "commit::target": 1,
+    "inspect::target": 1,
+    "move::target": 1,
+    "query_constraint::target": 1,
+    "verify::target": 1
+  },
+  "mode": "type_arg",
+  "size": 5,
+  "sketches": [
+    "commit::target",
+    "inspect::target",
+    "move::target",
+    "query_constraint::target",
+    "verify::target"
+  ]
+}

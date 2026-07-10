@@ -1,0 +1,47 @@
+seed: 13
+output_dir: outputs/foreact_4b_milestone
+
+model:
+  backbone: Qwen/Qwen3-4B
+  mode: non_thinking
+  context_length: 8192
+
+teacher:
+  main_trajectory_model: deepseek-v4-pro
+  continuation_model: deepseek-v4-flash
+  second_teacher_model: gpt-5.5
+  cache_dir: .cache/teacher_rollouts
+  api_key_env:
+    deepseek: DEEPSEEK_API_KEY
+    openai: OPENAI_API_KEY
+
+data:
+  train_domains: [plandepth, tau2_airline, tau2_retail, appworld]
+  heldout_domains: [swe_bench_verified]
+  target_trajectories: 5000
+  prefix_sample_fraction: 0.25
+  keep_failed_trajectories: true
+
+zeta:
+  mode: type_arg
+  vq_codebook_size: 512
+
+soft_targets:
+  horizon: 8
+  rollouts: 4
+  uncertainty_priority: true
+
+training:
+  horizon: 8
+  lambda_future: 0.3
+  mu_consistency: 0.1
+  eta_success: 0.05
+  curriculum: [2, 4, 8]
+  seeds: [13, 17, 19]
+  trainer: verl
+
+evaluation:
+  plandepth_depths: [2, 4, 6, 8, 12, 16]
+  pass_k: [1, 4]
+  bootstrap_ci: true
+

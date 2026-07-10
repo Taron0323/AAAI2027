@@ -1,0 +1,57 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "open_hands-verifier-trajectories",
+  "dataset_size": 371430780,
+  "description": "",
+  "download_size": 119011745,
+  "features": {
+    "messages": {
+      "feature": {
+        "content": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "role": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      "_type": "List"
+    },
+    "resolved": {
+      "dtype": "bool",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 490442525,
+  "splits": {
+    "train.mixture": {
+      "name": "train.mixture",
+      "num_bytes": 187858280,
+      "num_examples": 2636,
+      "dataset_name": "open_hands-verifier-trajectories"
+    },
+    "train.onpolicy": {
+      "name": "train.onpolicy",
+      "num_bytes": 138859078,
+      "num_examples": 1750,
+      "dataset_name": "open_hands-verifier-trajectories"
+    },
+    "train.offpolicy": {
+      "name": "train.offpolicy",
+      "num_bytes": 44713422,
+      "num_examples": 886,
+      "dataset_name": "open_hands-verifier-trajectories"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

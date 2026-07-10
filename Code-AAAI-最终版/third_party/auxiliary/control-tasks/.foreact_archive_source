@@ -1,0 +1,3 @@
+repo: https://github.com/john-hewitt/control-tasks
+source: GitHub API tarball
+notes: git clone was blocked by local GitHub transport errors; this archive-managed checkout is verified by README.md and control-tasks/ markers.

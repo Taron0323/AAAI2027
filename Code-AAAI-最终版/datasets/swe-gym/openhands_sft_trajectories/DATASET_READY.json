@@ -1,0 +1,11 @@
+{
+  "repo": "SWE-Gym/OpenHands-SFT-Trajectories",
+  "splits": {
+    "train.success.oss": {
+      "columns": [
+        "messages"
+      ],
+      "rows": 491
+    }
+  }
+}

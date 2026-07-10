@@ -1,0 +1,9 @@
+asset_manifest: third_party/assets.yaml
+dataset_config: configs/datasets.yaml
+experiment_config: configs/foreact_4b_milestone.yaml
+ablation_manifest: outputs/smoke/ablation_real_jobs/ablation_manifest.json
+teacher_trajectories: outputs/teacher/trajectories.jsonl
+control_task: outputs/control_tasks/random_labels.jsonl
+efficiency_plan: outputs/efficiency/vllm_plan.json
+lats_baseline_plan: outputs/baselines/lats_run_plan.json
+plan_and_act_baseline_plan: outputs/baselines/plan_and_act_run_plan.json

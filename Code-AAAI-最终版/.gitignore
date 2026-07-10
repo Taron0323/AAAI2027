@@ -1,0 +1,60 @@
+# Python/cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local environments and secrets
+.venv/
+.venv312/
+.venv-appworld/
+.venv-assets/
+venv/
+env/
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets/
+
+# Generated/local experiment artifacts
+runs/
+logs/
+wandb/
+mlruns/
+.cache/
+
+# Keep the checked-in smoke artifacts and bundled official assets in the final
+# repository. Ignore only large ad-hoc experiment dumps created after release.
+outputs/full_runs/
+outputs/checkpoints/
+outputs/tmp/
+data/raw/
+data/tmp/
+
+# Model weights/checkpoints
+/checkpoints/
+/models/
+/weights/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.gguf
+*.onnx
+
+# Large archives and compressed outputs
+*.zip
+*.tar
+*.tar.gz
+*.jsonl.gz
+
+# Local scratch / OS
+tmp/
+*.log
+.DS_Store

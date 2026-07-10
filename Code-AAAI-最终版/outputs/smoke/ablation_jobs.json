@@ -1,0 +1,186 @@
+[
+  {
+    "ablation_id": "A",
+    "description": "same teacher data and FLOPs, no forecast heads",
+    "group": "main_controls",
+    "key": "A_no_forecast_heads"
+  },
+  {
+    "ablation_id": "B",
+    "description": "LAP soft-target CE without PCR",
+    "group": "main_controls",
+    "key": "B_no_pcr"
+  },
+  {
+    "ablation_id": "B_prime",
+    "description": "remove branch-aware entropy weighting",
+    "group": "main_controls",
+    "key": "B_prime_no_branch_weight"
+  },
+  {
+    "baseline_id": "B5",
+    "description": "token-level MTP, the critical action-vs-token baseline",
+    "group": "main_controls",
+    "key": "token_mtp"
+  },
+  {
+    "group": "A_prime_sketch_granularity",
+    "key": "A_prime_zeta_token",
+    "zeta_mode": "token"
+  },
+  {
+    "group": "A_prime_sketch_granularity",
+    "key": "A_prime_zeta_fsp_summary",
+    "zeta_mode": "fsp_summary"
+  },
+  {
+    "group": "A_prime_sketch_granularity",
+    "key": "A_prime_zeta_type",
+    "zeta_mode": "type"
+  },
+  {
+    "group": "A_prime_sketch_granularity",
+    "key": "A_prime_zeta_type_arg",
+    "zeta_mode": "type_arg"
+  },
+  {
+    "group": "A_prime_sketch_granularity",
+    "key": "A_prime_zeta_vq_mock",
+    "zeta_mode": "vq_mock"
+  },
+  {
+    "group": "D_horizon_sweep",
+    "horizon": 1,
+    "key": "D_H1"
+  },
+  {
+    "group": "D_horizon_sweep",
+    "horizon": 2,
+    "key": "D_H2"
+  },
+  {
+    "group": "D_horizon_sweep",
+    "horizon": 4,
+    "key": "D_H4"
+  },
+  {
+    "group": "D_horizon_sweep",
+    "horizon": 8,
+    "key": "D_H8"
+  },
+  {
+    "group": "D_horizon_sweep",
+    "horizon": 16,
+    "key": "D_H16"
+  },
+  {
+    "group": "E_rollout_sweep",
+    "key": "E_K1",
+    "rollouts": 1
+  },
+  {
+    "group": "E_rollout_sweep",
+    "key": "E_K2",
+    "rollouts": 2
+  },
+  {
+    "group": "E_rollout_sweep",
+    "key": "E_K4",
+    "rollouts": 4
+  },
+  {
+    "group": "E_rollout_sweep",
+    "key": "E_K8",
+    "rollouts": 8
+  },
+  {
+    "group": "F_loss_sweep",
+    "key": "F_lambda0.1_mu0.0",
+    "lambda_future": 0.1,
+    "mu_consistency": 0.0
+  },
+  {
+    "group": "F_loss_sweep",
+    "key": "F_lambda0.1_mu0.1",
+    "lambda_future": 0.1,
+    "mu_consistency": 0.1
+  },
+  {
+    "group": "F_loss_sweep",
+    "key": "F_lambda0.1_mu0.3",
+    "lambda_future": 0.1,
+    "mu_consistency": 0.3
+  },
+  {
+    "group": "F_loss_sweep",
+    "key": "F_lambda0.3_mu0.0",
+    "lambda_future": 0.3,
+    "mu_consistency": 0.0
+  },
+  {
+    "group": "F_loss_sweep",
+    "key": "F_lambda0.3_mu0.1",
+    "lambda_future": 0.3,
+    "mu_consistency": 0.1
+  },
+  {
+    "group": "F_loss_sweep",
+    "key": "F_lambda0.3_mu0.3",
+    "lambda_future": 0.3,
+    "mu_consistency": 0.3
+  },
+  {
+    "group": "F_loss_sweep",
+    "key": "F_lambda0.5_mu0.0",
+    "lambda_future": 0.5,
+    "mu_consistency": 0.0
+  },
+  {
+    "group": "F_loss_sweep",
+    "key": "F_lambda0.5_mu0.1",
+    "lambda_future": 0.5,
+    "mu_consistency": 0.1
+  },
+  {
+    "group": "F_loss_sweep",
+    "key": "F_lambda0.5_mu0.3",
+    "lambda_future": 0.5,
+    "mu_consistency": 0.3
+  },
+  {
+    "ablation_id": "C",
+    "description": "disable latent rerank, default zero-overhead ReAct-shaped inference",
+    "group": "C_rerank_controls",
+    "key": "C_mode_A_only"
+  },
+  {
+    "ablation_id": "C_prime",
+    "description": "mode B scoring with success head only",
+    "group": "C_rerank_controls",
+    "key": "C_prime_success_only"
+  },
+  {
+    "ablation_id": "C_prime",
+    "description": "mode B scoring with dead-end forecast mass only",
+    "group": "C_rerank_controls",
+    "key": "C_prime_forecast_only"
+  },
+  {
+    "ablation_id": "E_prime",
+    "description": "second teacher subset for teacher-independence audit, external/API required",
+    "group": "E_prime_teacher_controls",
+    "key": "E_prime_second_teacher_subset"
+  },
+  {
+    "ablation_id": "G",
+    "description": "same structure predicts past sketches instead of future sketches",
+    "group": "G_anti_confounds",
+    "key": "G_predict_past"
+  },
+  {
+    "ablation_id": "G",
+    "description": "give ReAct-SFT equivalent extra optimization budget",
+    "group": "G_anti_confounds",
+    "key": "G_flops_matched_sft"
+  }
+]

@@ -1,0 +1,9 @@
+Goal: Reach node_demo_3 without triggering the delayed trap.
+Action 1: inspect target=node_demo_0
+Observation 1: nominal: completed inspect
+Action 2: move target=node_demo_1
+Observation 2: nominal: completed move
+Action 3: verify target=node_demo_2
+Observation 3: nominal: completed verify
+Action 4: commit target=node_demo_3
+Observation 4: nominal: completed commit

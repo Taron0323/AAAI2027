@@ -1,0 +1,8 @@
+benchmark: tau2_bench
+out: outputs/benchmark/tau2_airline_run_plan.json
+domain: airline
+agent_llm: gpt-4.1
+user_llm: gpt-4.1
+num_trials: 1
+num_tasks: 5
+execute: false

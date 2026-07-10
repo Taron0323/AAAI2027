@@ -1,0 +1,21 @@
+{
+  "repo": "SWE-Gym/SWE-Gym-Lite",
+  "splits": {
+    "train": {
+      "columns": [
+        "instance_id",
+        "hints_text",
+        "patch",
+        "test_patch",
+        "created_at",
+        "problem_statement",
+        "repo",
+        "base_commit",
+        "version",
+        "PASS_TO_PASS",
+        "FAIL_TO_PASS"
+      ],
+      "rows": 230
+    }
+  }
+}

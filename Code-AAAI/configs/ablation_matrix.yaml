@@ -1,0 +1,53 @@
+main_controls:
+  - key: A_no_forecast_heads
+    ablation_id: A
+    description: same teacher data and FLOPs, no forecast heads
+  - key: B_no_pcr
+    ablation_id: B
+    description: LAP soft-target CE without PCR
+  - key: B_prime_no_branch_weight
+    ablation_id: B_prime
+    description: remove branch-aware entropy weighting
+  - key: token_mtp
+    baseline_id: B5
+    description: token-level MTP, the critical action-vs-token baseline
+
+sketch_granularity:
+  - token
+  - fsp_summary
+  - type
+  - type_arg
+  - vq_mock
+
+horizon_sweep: [1, 2, 4, 8, 16]
+rollout_sweep: [1, 2, 4, 8]
+lambda_sweep: [0.1, 0.3, 0.5]
+mu_sweep: [0.0, 0.1, 0.3]
+
+rerank_controls:
+  - key: C_mode_A_only
+    ablation_id: C
+    description: disable latent rerank, default zero-overhead ReAct-shaped inference
+  - key: C_prime_success_only
+    ablation_id: C_prime
+    description: mode B scoring with success head only
+  - key: C_prime_forecast_only
+    ablation_id: C_prime
+    description: mode B scoring with dead-end forecast mass only
+
+teacher_controls:
+  - key: E_prime_second_teacher_subset
+    ablation_id: E_prime
+    description: second teacher subset for teacher-independence audit, external/API required
+
+anti_confounds:
+  - key: G_predict_past
+    ablation_id: G
+    description: same structure predicts past sketches instead of future sketches
+  - key: G_flops_matched_sft
+    ablation_id: G
+    description: give ReAct-SFT equivalent extra optimization budget
+
+reporting_priority:
+  main_paper: [A_no_forecast_heads, token_mtp, A_prime_zeta_type_arg, B_no_pcr, G_predict_past, G_flops_matched_sft]
+  appendix: [C_mode_A_only, C_prime_success_only, C_prime_forecast_only, D_horizon_sweep, E_rollout_sweep, E_prime_second_teacher_subset, F_loss_sweep, A_prime_zeta_vq_mock]

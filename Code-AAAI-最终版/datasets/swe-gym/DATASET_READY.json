@@ -1,0 +1,81 @@
+{
+  "openhands_sft_trajectories": {
+    "repo": "SWE-Gym/OpenHands-SFT-Trajectories",
+    "splits": {
+      "train.success.oss": {
+        "columns": [
+          "messages"
+        ],
+        "rows": 491
+      }
+    }
+  },
+  "openhands_verifier_trajectories": {
+    "repo": "SWE-Gym/OpenHands-Verifier-Trajectories",
+    "splits": {
+      "train.mixture": {
+        "columns": [
+          "messages",
+          "resolved"
+        ],
+        "rows": 2636
+      },
+      "train.offpolicy": {
+        "columns": [
+          "messages",
+          "resolved"
+        ],
+        "rows": 886
+      },
+      "train.onpolicy": {
+        "columns": [
+          "messages",
+          "resolved"
+        ],
+        "rows": 1750
+      }
+    }
+  },
+  "swe_gym": {
+    "repo": "SWE-Gym/SWE-Gym",
+    "splits": {
+      "train": {
+        "columns": [
+          "instance_id",
+          "hints_text",
+          "patch",
+          "test_patch",
+          "created_at",
+          "problem_statement",
+          "repo",
+          "base_commit",
+          "version",
+          "PASS_TO_PASS",
+          "FAIL_TO_PASS"
+        ],
+        "rows": 2438
+      }
+    }
+  },
+  "swe_gym_lite": {
+    "repo": "SWE-Gym/SWE-Gym-Lite",
+    "splits": {
+      "train": {
+        "columns": [
+          "instance_id",
+          "hints_text",
+          "patch",
+          "test_patch",
+          "created_at",
+          "problem_statement",
+          "repo",
+          "base_commit",
+          "version",
+          "PASS_TO_PASS",
+          "FAIL_TO_PASS"
+        ],
+        "rows": 230
+      }
+    }
+  }
+}

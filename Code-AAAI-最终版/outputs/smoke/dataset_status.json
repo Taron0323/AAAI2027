@@ -1,0 +1,90 @@
+{
+  "appworld": {
+    "available": true,
+    "missing": [],
+    "note": "Official datasets/baselines are not vendored or faked by this repository.",
+    "paths": {
+      "data": {
+        "exists": true,
+        "path": "/Users/futaoran/Desktop/AAAI2027/Code-AAAI-\u6700\u7ec8\u7248/datasets/appworld/data"
+      },
+      "root": {
+        "exists": true,
+        "path": "/Users/futaoran/Desktop/AAAI2027/Code-AAAI-\u6700\u7ec8\u7248/datasets/appworld"
+      },
+      "train_split": {
+        "exists": true,
+        "path": "/Users/futaoran/Desktop/AAAI2027/Code-AAAI-\u6700\u7ec8\u7248/datasets/appworld/data/datasets/train.txt"
+      }
+    },
+    "setup": "Install AppWorld, download official splits, then set APPWORLD_ROOT."
+  },
+  "swe_bench_verified": {
+    "available": true,
+    "missing": [],
+    "note": "Official datasets/baselines are not vendored or faked by this repository.",
+    "paths": {
+      "root": {
+        "exists": true,
+        "path": "/Users/futaoran/Desktop/AAAI2027/Code-AAAI-\u6700\u7ec8\u7248/datasets/swe-bench"
+      },
+      "verified": {
+        "exists": true,
+        "path": "/Users/futaoran/Desktop/AAAI2027/Code-AAAI-\u6700\u7ec8\u7248/datasets/swe-bench/verified/DATASET_READY.json"
+      }
+    },
+    "setup": "Install SWE-bench, download/configure Verified, then set SWE_BENCH_ROOT."
+  },
+  "swe_gym": {
+    "available": true,
+    "missing": [],
+    "note": "Official datasets/baselines are not vendored or faked by this repository.",
+    "paths": {
+      "openhands_sft": {
+        "exists": true,
+        "path": "/Users/futaoran/Desktop/AAAI2027/Code-AAAI-\u6700\u7ec8\u7248/datasets/swe-gym/openhands_sft_trajectories/DATASET_READY.json"
+      },
+      "openhands_verifier": {
+        "exists": true,
+        "path": "/Users/futaoran/Desktop/AAAI2027/Code-AAAI-\u6700\u7ec8\u7248/datasets/swe-gym/openhands_verifier_trajectories/DATASET_READY.json"
+      },
+      "root": {
+        "exists": true,
+        "path": "/Users/futaoran/Desktop/AAAI2027/Code-AAAI-\u6700\u7ec8\u7248/datasets/swe-gym"
+      },
+      "swe_gym": {
+        "exists": true,
+        "path": "/Users/futaoran/Desktop/AAAI2027/Code-AAAI-\u6700\u7ec8\u7248/datasets/swe-gym/swe_gym/DATASET_READY.json"
+      },
+      "swe_gym_lite": {
+        "exists": true,
+        "path": "/Users/futaoran/Desktop/AAAI2027/Code-AAAI-\u6700\u7ec8\u7248/datasets/swe-gym/swe_gym_lite/DATASET_READY.json"
+      }
+    },
+    "setup": "Install SWE-Gym and set SWE_GYM_ROOT to the training environment/data root."
+  },
+  "tau2_bench": {
+    "available": true,
+    "missing": [],
+    "note": "Official datasets/baselines are not vendored or faked by this repository.",
+    "paths": {
+      "airline": {
+        "exists": true,
+        "path": "/Users/futaoran/Desktop/AAAI2027/Code-AAAI-\u6700\u7ec8\u7248/third_party/benchmarks/tau2-bench/data/tau2/domains/airline"
+      },
+      "retail": {
+        "exists": true,
+        "path": "/Users/futaoran/Desktop/AAAI2027/Code-AAAI-\u6700\u7ec8\u7248/third_party/benchmarks/tau2-bench/data/tau2/domains/retail"
+      },
+      "root": {
+        "exists": true,
+        "path": "/Users/futaoran/Desktop/AAAI2027/Code-AAAI-\u6700\u7ec8\u7248/third_party/benchmarks/tau2-bench/data/tau2/domains"
+      },
+      "telecom": {
+        "exists": true,
+        "path": "/Users/futaoran/Desktop/AAAI2027/Code-AAAI-\u6700\u7ec8\u7248/third_party/benchmarks/tau2-bench/data/tau2/domains/telecom"
+      }
+    },
+    "setup": "Official tau2 domain data is included in the tau2-bench submodule. Override with TAU2_BENCH_ROOT if desired."
+  }
+}

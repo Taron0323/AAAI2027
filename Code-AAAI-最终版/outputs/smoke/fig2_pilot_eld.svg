@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="420" viewBox="0 0 760 420">
+<text x="58" y="28" font-size="18" font-weight="700">Fig.2 Pilot ELD Smoke Proxy</text>
+<line x1="58" y1="362" x2="702" y2="362" stroke="#333" />
+<line x1="58" y1="58" x2="58" y2="362" stroke="#333" />
+<text x="58" y="408" font-size="12">depth / method</text>
+<text x="10" y="40" font-size="12">success</text>
+<polyline fill="none" stroke="#2f6f9f" stroke-width="3" points="58.0,338.6 272.7,335.9 487.3,348.7 702.0,351.5" />
+<line x1="272.7" y1="58" x2="272.7" y2="362" stroke="#2f6f9f" stroke-dasharray="5 5" />
+<text x="276.7" y="76" font-size="12" fill="#2f6f9f">ELD=2</text>
+<text x="512" y="58" font-size="13" fill="#2f6f9f">react_sft_smoke</text>
+<text x="60" y="390" font-size="12">Smoke proxy; full paper uses intervention-probe future signal.</text>
+</svg>

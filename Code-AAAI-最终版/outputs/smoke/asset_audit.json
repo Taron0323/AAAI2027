@@ -1,0 +1,52 @@
+{
+  "allowed_groups": [
+    "auxiliary_code",
+    "baseline_code",
+    "benchmark_code",
+    "datasets",
+    "nested_archive_code"
+  ],
+  "model_weight_files": [
+    "/Users/futaoran/Desktop/AAAI2027/Code-AAAI-\u6700\u7ec8\u7248/.venv-appworld/lib/python3.12/site-packages/appworld.pth",
+    "/Users/futaoran/Desktop/AAAI2027/Code-AAAI-\u6700\u7ec8\u7248/.venv-appworld/lib/python3.12/site-packages/distutils-precedence.pth"
+  ],
+  "model_weight_suffixes": [
+    ".bin",
+    ".ckpt",
+    ".gguf",
+    ".onnx",
+    ".pt",
+    ".pth",
+    ".safetensors"
+  ],
+  "no_model_weights": false,
+  "note": "Assets are restricted to benchmark/harness code, dataset path links/checks, baseline code, and auxiliary code; model weights are excluded.",
+  "summary": {
+    "auxiliary_code": {
+      "available": 3,
+      "missing": 0,
+      "total": 3
+    },
+    "baseline_code": {
+      "available": 6,
+      "missing": 0,
+      "total": 6
+    },
+    "benchmark_code": {
+      "available": 5,
+      "missing": 0,
+      "total": 5
+    },
+    "datasets": {
+      "available": 4,
+      "missing": 0,
+      "total": 4
+    },
+    "nested_archive_code": {
+      "available": 2,
+      "missing": 0,
+      "total": 2
+    }
+  },
+  "unknown_groups": []
+}

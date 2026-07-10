@@ -1,0 +1,16 @@
+{
+  "baseline": "plan_and_act",
+  "command": [
+    "python3",
+    "run_plan_and_act_with_replanning.py",
+    "--help"
+  ],
+  "cwd": "third_party/baselines/plan-and-act",
+  "executed": false,
+  "missing_paths": [],
+  "notes": "Official Plan-and-Act/PreAct checkout. Replace --help with benchmark-specific args after selecting task adapter.",
+  "source_paths": [
+    "third_party/baselines/plan-and-act"
+  ],
+  "status": "ready_source"
+}

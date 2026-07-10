@@ -1,0 +1,39 @@
+[submodule "Code-AAAI/third_party/benchmarks/tau2-bench"]
+	path = Code-AAAI/third_party/benchmarks/tau2-bench
+	url = https://github.com/sierra-research/tau2-bench.git
+[submodule "Code-AAAI/third_party/benchmarks/appworld"]
+	path = Code-AAAI/third_party/benchmarks/appworld
+	url = https://github.com/StonyBrookNLP/appworld.git
+[submodule "Code-AAAI/third_party/benchmarks/SWE-Gym"]
+	path = Code-AAAI/third_party/benchmarks/SWE-Gym
+	url = https://github.com/SWE-Gym/SWE-Gym.git
+[submodule "Code-AAAI/third_party/benchmarks/SWE-bench"]
+	path = Code-AAAI/third_party/benchmarks/SWE-bench
+	url = https://github.com/swe-bench/SWE-bench.git
+[submodule "Code-AAAI/third_party/baselines/ReAct"]
+	path = Code-AAAI/third_party/baselines/ReAct
+	url = https://github.com/ysymyth/ReAct.git
+[submodule "Code-AAAI/third_party/baselines/LanguageAgentTreeSearch"]
+	path = Code-AAAI/third_party/baselines/LanguageAgentTreeSearch
+	url = https://github.com/lapisrocks/LanguageAgentTreeSearch.git
+[submodule "Code-AAAI/third_party/baselines/WebDreamer"]
+	path = Code-AAAI/third_party/baselines/WebDreamer
+	url = https://github.com/OSU-NLP-Group/WebDreamer.git
+[submodule "Code-AAAI/third_party/baselines/plan-and-act"]
+	path = Code-AAAI/third_party/baselines/plan-and-act
+	url = https://github.com/SqueezeAILab/plan-and-act.git
+[submodule "Code-AAAI/third_party/baselines/PreAct"]
+	path = Code-AAAI/third_party/baselines/PreAct
+	url = https://github.com/Fu-Dayuan/PreAct.git
+[submodule "Code-AAAI/third_party/benchmarks/mini-swe-agent"]
+	path = Code-AAAI/third_party/benchmarks/mini-swe-agent
+	url = https://github.com/SWE-agent/mini-swe-agent.git
+[submodule "Code-AAAI/third_party/baselines/reflexion"]
+	path = Code-AAAI/third_party/baselines/reflexion
+	url = https://github.com/noahshinn/reflexion.git
+[submodule "Code-AAAI/third_party/auxiliary/verl"]
+	path = Code-AAAI/third_party/auxiliary/verl
+	url = https://github.com/verl-project/verl.git
+[submodule "Code-AAAI/third_party/auxiliary/OpenRLHF"]
+	path = Code-AAAI/third_party/auxiliary/OpenRLHF
+	url = https://github.com/OpenRLHF/OpenRLHF.git

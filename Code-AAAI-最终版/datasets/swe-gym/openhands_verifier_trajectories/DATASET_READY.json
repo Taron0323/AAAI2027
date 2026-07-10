@@ -1,0 +1,26 @@
+{
+  "repo": "SWE-Gym/OpenHands-Verifier-Trajectories",
+  "splits": {
+    "train.mixture": {
+      "columns": [
+        "messages",
+        "resolved"
+      ],
+      "rows": 2636
+    },
+    "train.offpolicy": {
+      "columns": [
+        "messages",
+        "resolved"
+      ],
+      "rows": 886
+    },
+    "train.onpolicy": {
+      "columns": [
+        "messages",
+        "resolved"
+      ],
+      "rows": 1750
+    }
+  }
+}

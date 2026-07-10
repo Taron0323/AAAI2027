@@ -1,0 +1,5 @@
+figure_role,method,depth,future_signal,threshold,above_threshold,effective_lookahead_depth,axis_depth_min,axis_depth_max,axis_signal_min,axis_signal_max,note
+Fig5_recovery,foreact_smoke,1,0.17135569384028598,0.05,True,4,1,4,0.0,0.19064024862834472,smoke proxy; replace with intervention-probe measurements for paper figures
+Fig5_recovery,foreact_smoke,2,0.19064024862834472,0.05,True,4,1,4,0.0,0.19064024862834472,smoke proxy; replace with intervention-probe measurements for paper figures
+Fig5_recovery,foreact_smoke,3,0.0975070319096435,0.05,True,4,1,4,0.0,0.19064024862834472,smoke proxy; replace with intervention-probe measurements for paper figures
+Fig5_recovery,foreact_smoke,4,0.07645940417663943,0.05,True,4,1,4,0.0,0.19064024862834472,smoke proxy; replace with intervention-probe measurements for paper figures

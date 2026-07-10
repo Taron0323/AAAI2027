@@ -1,0 +1,8 @@
+input: outputs/foreact_4b_milestone/eval_rows.jsonl
+out: outputs/teacher/trajectories.jsonl
+provider: mock
+model_id: deepseek-v4-pro
+api_key_env: DEEPSEEK_API_KEY
+cache_dir: .cache/teacher_main_trajectories
+horizon: 12
+limit: 16
